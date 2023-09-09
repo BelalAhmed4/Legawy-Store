@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="title" content="Legawy">
+  <meta name="description"
+    content="Discover a treasure trove of one-of-a-kind toys, offering endless joy and imagination.">
+  <meta name="keywords" content="Lego,Toys,Babies,BestWay,Blocks,Puzzle,Mekano">
+  <meta name="robots" content="noindex, nofollow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+
+  <!-- End Meta -->
+
+
+  <!-- Links To Sheets -->
+  <link rel="stylesheet" href="babies.css">
+  <link rel="stylesheet" href="../../../css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- End Links To Sheets -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+  <!-- End Fonts -->
+  <title>Boys Page</title>
+</head>
+
+<body>
+  <!-- ******* Start Body Absoluted Parts ******* -->
+  <!-- (1) Body Opacity Change After Clicking On Menu  -->
+  <div class="Opacity"></div>
+  <!-- (2) Side Bar -->
+  <div class="sideBar" id="sideBar">
+    <ul class="listParent">
+
+      <li>
+        <a href="../../../index.html" class="closeOnClick" onclick=filterProducts(event) data-filter="product"><img
+            class="icon" src="../../../img/icons/home-svgrepo-com.svg" alt="">
+          home</a>
+      </li>
+
+
+      <li>
+        <a href="../../../sideBarList/babies/babies.html" onclick=filterProducts(event) data-filter="babies"><img
+            class="icon" src="../../../img/icons/baby-stroller-svgrepo-com.svg" alt="">
+          Babies</a>
+      </li>
+
+      <li>
+        <a href="../../../sideBarList/birthDay&gifts/BD&G.html" onclick=filterProducts(event) data-filter="babies"><img
+            class="icon" src="../../../img/icons/gift-svgrepo-com.svg" alt="">
+          Gift Away</a>
+      </li>
+
+      <li class="toys-category">
+
+        <a class="showToys selected" onclick="showSubList()"><img class="icon"
+            src="../../../img/icons/joystick-gamepad-svgrepo-com.svg" alt="">Toys<span class="flex-row"><ion-icon
+              class="down-chevron" name="chevron-down-outline"></ion-icon></span></a>
+
+        <ul class="toysList  subList">
+          <li><a href="../../../sideBarList/toys/boys/boys.html" class="selected" onclick=filterProducts(event)
+              data-filter="boys"><img class="icon" src="../../../img/icons/boy-svgrepo-com.svg" alt="">Boys</a></li>
+          <li><a href="../../../sideBarList/toys/girls/girls.html" onclick=filterProducts(event)
+              data-filter="girls"><img class="icon" src="../../../img/icons/girl-svgrepo-com.svg" alt="">
+              Girls</a>
+          </li>
+          <li><a href="../../../sideBarList/toys/family/family.html" onclick=filterProducts(event)
+              data-filter="family"><img class="icon" src="../../../img/icons/family-3-generations-svgrepo-com.svg"
+                alt=""> Family</a>
+          </li>
+        </ul>
+
+      </li>
+
+      <li onclick=filterProducts(event) data-filter="sea-stuff"><a href="../../../sideBarList/seaStuff/seaStuff.html"
+          onclick=filterProducts(event) data-filter="sea-stuff"><img class="icon"
+            src="../../../img/icons/beachumbrella-svgrepo-com.svg" alt=""> Sea
+          Stuff</a>
+      </li>
+
+      <li class="educational-category">
+        <a class="showEducation" onclick="showSubList2()" data-filter="educational"><img class="icon"
+            src="../../../img/icons/brainIcon.svg" alt="">
+          Educational<span class="flex-row"><ion-icon class="down-chevron"
+              name="chevron-down-outline"></ion-icon></span></a>
+
+        <ul class="educationList subList">
+          <li>
+            <a href="../../../sideBarList/educational/lego/lego.html" onclick=filterProducts(event) data-filter="lego">
+              <img class="icon" src="../../../img/icons/lego-2-svgrepo-com.svg" alt="">
+              Lego</a>
+          </li>
+          <li>
+            <a href="../../../sideBarList/educational/puzzle/puzzle.html" onclick=filterProducts(event)
+              data-filter="puzzle"><img class="icon" src="../../../img/icons/puzzle-svgrepo-com.svg" alt="">
+              Puzzle</a>
+          </li>
+          <li>
+            <a href="../../../sideBarList/educational/makano/mekano.html" onclick=filterProducts(event)
+              data-filter="mekano"><img class="icon" src="../../../img/icons/hammer-wrench-svgrepo-com.svg" alt="">
+              Mekano</a>
+          </li>
+          <li>
+            <a href="../../../sideBarList/educational/other/other.html" onclick=filterProducts(event)
+              data-filter="other">Other</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- (3) header -->
+  <header>
+    <div class="header repeated-container flex-row">
+      <div class="userSpace flex-row">
+        <div class="favourites iconHolder">
+          <h5>0</h5>
+
+          <a href="../../../userSpace/liked-P/liked-P.html">
+            <ion-icon class="headerIcon" name="heart-outline"></ion-icon>
+          </a>
+        </div>
+        <div class="cart iconHolder">
+          <h5>0</h5>
+          <a href="../../../userSpace/cart/cart.html"><ion-icon class="headerIcon" name="bag-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <a href="../../../index.html"><img class="logo-img" src="../../../img/Logo.png" alt="Logo"></a>
+      <div class="menu-box flex-row gap-08">
+        <h2>Menu</h2>
+        <i class="headerIcon fa-solid fa-bars" onclick="showMenu()"></i>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+  <!-- (4) Start contact boxes -->
+  <div class="contact-container flex-column">
+
+    <a href="https://www.facebook.com/legawy" class="contact-box flex-row facebook"><img
+        src="../../../img/icons/facebook-color-svgrepo-com.svg" alt=""></a>
+    <a href="https://t.me/legawy" class="contact-box flex-row telegram"><img
+        src="../../../img/icons/telegram-svgrepo-com.svg" alt=""></a>
+    <a href="https://whatsapp.com/channel/0029Va6XibRKrWQqkTmbIY0o" class="contact-box flex-row whatsapp"><img
+        src="../../../img/icons/whatsapp-svgrepo-com.svg" alt=""></a>
+    <a href="https://www.instagram.com/legawy159/?hl=en" class="contact-box flex-row instagram"><img
+        src="../../../img/icons/instagram-svgrepo-com.svg" alt=""></a>
+  </div>
+  <!-- End contact boxes -->
+  <!-- ******* End Absoluted Parts ******* -->
+
+
+
+
+
+
+
+
+
+
+  <!-- (1) Start Title & Announcements Part -->
+  <section class="mid-section repeated-container repeatedSection">
+
+    <div class="introduction flex-column">
+      <div class="heroTitle forTitle flex-row">
+        <div class="verticalLine"></div>
+        <div class="centerParent flex-column">
+          <div class="mainTitle flex-column">
+            <h2 class="sectionTitle">Boys</h2>
+            <h3>SECTION</h3>
+
+          </div>
+          <div class="subTitle">
+          </div>
+        </div>
+
+        <div class="verticalLine"></div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+  </section>
+  <!-- end Title & Announcements Part-->
+
+
+  <!-- (2) Start Main  -->
+  <section class="main-content repeated-container">
+    <div class="main-box flex-column gap-012">
+
+
+      <div class="search-box flex-row">
+        <input placeholder="Looking For ?" type="text" class="search-input" id="search-input">
+        <div class="search-icon-box"><img src="../../img/icons/search-icon.svg" class="search-icon" alt=""></div>
+      </div>
+
+
+      <div class="product-list repeated-container">
+        <!-- **************************** -->
+        <div id="" class="product puzzle flex-column babies">
+          <div class="product-img-parent flex-column"> <img loading="lazy"
+              src="../../img/Products/Babies/Animals Puzzle.png" class="product-img" alt=""></div>
+          <div class="product-details">
+            <h4>Animals Puzzle
+              <p></p>
+            </h4>
+            <h5>*** EGP</h5>
+            <div class="atcParent">
+              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+
+            </div>
+          </div>
+        </div>
+        <!-- **************************** -->
+        <div id="" class="product flex-column babies">
+          <div class="product-img-parent flex-column"> <img loading="lazy"
+              src="../../img/Products/Babies/Baby Walker.png" class="product-img" alt=""></div>
+          <div class="product-details">
+            <h4>Baby Walker
+              <p></p>
+            </h4>
+            <h5>*** EGP</h5>
+            <div class="atcParent">
+              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+
+            </div>
+          </div>
+        </div>
+        <!-- **************************** -->
+        <div id="" class="product flex-column babies educational">
+          <div class="product-img-parent flex-column"> <img loading="lazy"
+              src="../../img/Products/Babies/Educational Babies Car.png" class="product-img" alt=""></div>
+          <div class="product-details">
+            <h4>Educational Babies Car
+              <p></p>
+            </h4>
+            <h5>*** EGP</h5>
+            <div class="atcParent">
+              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+
+            </div>
+          </div>
+        </div>
+        <!-- **************************** -->
+        <div id="" class="product flex-column babies educational">
+          <div class="product-img-parent flex-column"> <img loading="lazy"
+              src="../../img/Products/Babies/Educational Board.png" class="product-img" alt=""></div>
+          <div class="product-details">
+            <h4>Educational Board
+              <p></p>
+            </h4>
+            <h5>*** EGP</h5>
+            <div class="atcParent">
+              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+
+            </div>
+          </div>
+        </div>
+        <!-- **************************** -->
+        <div id="" class="product flex-column babies educational">
+          <div class="product-img-parent flex-column"> <img loading="lazy"
+              src="../../img/Products/Babies/Educational Tablet.png" class="product-img" alt=""></div>
+          <div class="product-details">
+            <h4>Educational Tablet
+              <p></p>
+            </h4>
+            <h5>*** EGP</h5>
+            <div class="atcParent">
+              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+
+            </div>
+          </div>
+        </div>
+        <!-- **************************** -->
+        <div id="" class="product flex-column babies">
+          <div class="product-img-parent flex-column"> <img loading="lazy"
+              src="../../img/Products/Babies/Horse Piano.png" class="product-img" alt=""></div>
+          <div class="product-details">
+            <h4>Horse Piano
+              <p></p>
+            </h4>
+            <h5>*** EGP</h5>
+            <div class="atcParent">
+              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+
+            </div>
+          </div>
+        </div>
+        <!-- **************************** -->
+        <div id="" class="product flex-column babies">
+          <div class="product-img-parent flex-column"> <img loading="lazy"
+              src="../../img/Products/Babies/Mushrome Piano.png" class="product-img" alt=""></div>
+          <div class="product-details">
+            <h4>Mushrome Piano
+              <p></p>
+            </h4>
+            <h5>*** EGP</h5>
+            <div class="atcParent">
+              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- **************************** -->
+        <div id="" class="product flex-column boys girls">
+          <div class="product-img-parent flex-column"> <img loading="lazy"
+              src="../../img/Products/Toys/B & G/Fishing Plate.png" class="product-img" alt=""></div>
+          <div class="product-details">
+            <h4>Fishing Plate
+              <p></p>
+            </h4>
+            <h5>*** EGP</h5>
+            <div class="atcParent">
+              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+
+            </div>
+          </div>
+        </div>
+        <!-- **************************** -->
+        <div id="" class="product puzzle flex-column babies boys girls educational">
+          <div class="product-img-parent flex-column"> <img loading="lazy"
+              src="../../img/Products/Toys/Educational/Puzzle/Animals Puzzle.png" class="product-img" alt=""></div>
+          <div class="product-details">
+            <h4>Animals Puzzle
+              <p></p>
+            </h4>
+            <h5>*** EGP</h5>
+            <div class="atcParent">
+              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+
+            </div>
+          </div>
+        </div>
+        <!-- **************************** -->
+
+
+
+
+
+      </div>
+
+    </div>
+  </section>
+  <!-- End Main -->
+
+
+  <!-- Start Footer Section -->
+  <section class="footer">
+
+    <div class="contact footerBox flex-column ">
+      <div class="legawyImg">
+        <img src="../../../img/Logo.png" alt="">
+      </div>
+
+    </div>
+
+
+
+    <div class="discover footerBox flex-column">
+      <h2>Discover</h2>
+
+      <div class="location_delivery">
+        <a href="https://goo.gl/maps/ggJ1W4PruquoKisU6">Our Location</a>
+        <a>Delivery & Shipment</a>
+        <a>Customers Reviews</a>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="aboutUs footerBox flex-column">
+
+      <h2>About Us</h2>
+      <div class="contact_aboutUs">
+        <a>Contact Us</a>
+        <a>About Us</a>
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+  </section>
+  <!-- End Footer Section -->
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="../../../js/script.js"></script>
+
+</html>

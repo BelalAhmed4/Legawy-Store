@@ -1,0 +1,20 @@
+.main-content {
+  height: 60vh;
+}
+.main-content .main-box {
+  gap: 4.6rem;
+}
+.main-content .forEmpty {
+  align-items: center;
+}
+.main-content .forEmpty h2 {
+  font-size: 1.6rem;
+  color: var(--secondaryFontColor);
+}
+.main-content .MIparent {
+  justify-content: center;
+}
+.main-content .MIparent img {
+  width: 40%;
+  max-width: 51rem;
+}
