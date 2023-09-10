@@ -409,8 +409,10 @@ img.icon {
 /* End Repeated Section */
 
 /* start Main Box For Content */
+
 .main-box {
   align-items: center;
+  min-height: 60vh;
 }
 .main-box .search-box {
   margin-top: 1.1rem;
