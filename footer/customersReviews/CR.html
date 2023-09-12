@@ -18,7 +18,9 @@
 
 
   <!-- Links To Sheets -->
+  <link rel="stylesheet" href="../../css/home.css">
   <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
   <!-- End Fonts -->
-  <title>Sea Stuff Page</title>
+  <title>Customers Reviews Page</title>
 </head>
 
 <body>
@@ -47,8 +49,8 @@
 
 
       <li>
-        <a href="../../sideBarList/babies/babies.html" onclick=filterProducts(event) data-filter="babies"><img
-            class="icon" src="../../img/icons/baby-stroller-svgrepo-com.svg" alt="">
+        <a class="selected" href="../../sideBarList/babies/babies.html" onclick=filterProducts(event)
+          data-filter="babies"><img class="icon" src="../../img/icons/baby-stroller-svgrepo-com.svg" alt="">
           Babies</a>
       </li>
 
@@ -79,9 +81,9 @@
 
       </li>
 
-      <li onclick=filterProducts(event) data-filter="sea-stuff"><a class="selected"
-          href="../../sideBarList/seaStuff/seaStuff.html" onclick=filterProducts(event) data-filter="sea-stuff"><img
-            class="icon" src="../../img/icons/beachumbrella-svgrepo-com.svg" alt=""> Sea
+      <li onclick=filterProducts(event) data-filter="sea-stuff"><a href="../../sideBarList/seaStuff/seaStuff.html"
+          onclick=filterProducts(event) data-filter="sea-stuff"><img class="icon"
+            src="../../img/icons/beachumbrella-svgrepo-com.svg" alt=""> Sea
           Stuff</a>
       </li>
 
@@ -165,15 +167,15 @@
 
 
   <!-- (1) Start Title & Announcements Part -->
-  <section class="mid-section repeated-container repeatedSection">
+  <section class=" mid-section repeated-container repeatedSection">
 
     <div class="introduction flex-column">
       <div class="heroTitle forTitle flex-row">
         <div class="verticalLine"></div>
         <div class="centerParent flex-column">
           <div class="mainTitle flex-column">
-            <h2 class="sectionTitle">Sea Stuff </h2>
-            <h3>SECTION</h3>
+            <h2 class="sectionTitle">Customers Reviews</h2>
+            <!-- <h3>SECTION</h3> -->
 
           </div>
           <div class="subTitle">
@@ -196,134 +198,69 @@
 
 
   <!-- (2) Start Main  -->
-  <section class="main-content repeated-container">
-    <div class="main-box flex-column gap-012">
-
-
-      <div class="search-box flex-row">
-        <input placeholder="Looking For ?" type="text" class="search-input" id="search-input">
-        <div class="search-icon-box"><img src="../../img/icons/search-icon.svg" class="search-icon" alt=""></div>
+  <section class="CRS">
+    <div class="customers-reviews repeated-container">
+      <div class="backgroundImg"></div>
+      <div class="C-box flex-column">
+        <div class="C-img-name flex-column"><img src="../../img/Reviewers/customer-1.jpg" alt="">
+          <h3>Omar Nasr</h3>
+        </div>
+        <div class="C-review">
+          <h3>"I've been a regular at this toy shop for years. The service is friendly, and the wide variety of toys
+            always keeps me
+            coming back."</h3>
+        </div>
+      </div>
+      <div class="C-box flex-column">
+        <div class="C-img-name flex-column"><img src="../../img/Reviewers/customer-2.jpg" alt="">
+          <h3>Belal Shahen</h3>
+        </div>
+        <div class="C-review">
+          <h3>"This toy shop is my go-to for quality toys. The staff is helpful, and I've enjoyed shopping here for
+            years."</h3>
+        </div>
+      </div>
+      <div class="C-box flex-column">
+        <div class="C-img-name flex-column"><img src="../../img/Reviewers/customer-3.jpg" alt="">
+          <h3>Gamal Mohamed</h3>
+        </div>
+        <div class="C-review">
+          <h3>"Great toy shop with a friendly staff. I've been a loyal customer for years and always find what I'm
+            looking for."</h3>
+        </div>
+      </div>
+      <div class="C-box flex-column">
+        <div class="C-img-name flex-column"><img src="../../img/Reviewers/customer-4.jpg" alt="">
+          <h3>Amaar Ahmed</h3>
+        </div>
+        <div class="C-review">
+          <h3>"I love this toy shop! The selection is fantastic, and the service is top-notch. It's been my favorite
+            place to shop for
+            toys for years."</h3>
+        </div>
+      </div>
+      <div class="C-box flex-column">
+        <div class="C-img-name flex-column"><img src="../../img/Reviewers/customer-5.jpg" alt="">
+          <h3>Riad Mohamed</h3>
+        </div>
+        <div class="C-review">
+          <h3>"Highly recommend this toy shop. The toys are great, and the staff is always helpful. I've been a
+            satisfied customer for
+            years."</h3>
+        </div>
+      </div>
+      <div class="C-box flex-column">
+        <div class="C-img-name flex-column"><img src="../../img/Reviewers/customer-6.webp" alt="">
+          <h3>Ola Saleh</h3>
+        </div>
+        <div class="C-review">
+          <h3>"I've had a wonderful experience at this toy shop. The toys are of excellent quality, and the staff is
+            knowledgeable.
+            It's been my go-to store for years."</h3>
+        </div>
       </div>
 
 
-      <div class="product-list repeated-container">
-        <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Crap Float.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Crap Float
-              <p></p>
-            </h4>
-            <h5>160 EGP</h5>
-            <h3 class="bdi">200 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Pool Ball.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Pool Ball
-              <p></p>
-            </h4>
-            <h5>90 EGP</h5>
-            <h3 class="bdi">120 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Sea Mask.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Sea Mask
-              <p></p>
-            </h4>
-            <h5>125 EGP</h5>
-            <h3 class="bdi">160 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Spider Man Arm Bands.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Arm Bands
-              <p></p>
-            </h4>
-            <h5>90 EGP</h5>
-            <h3 class="bdi">110 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Unicorn Float.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Unicorn Float
-              <p></p>
-            </h4>
-            <h5>300 EGP</h5>
-            <h3 class="bdi">399 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column ">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Pool Guns With Characters.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Pool Guns With Characters
-              <p></p>
-            </h4>
-            <h5>60 EGP</h5>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column ">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Pool Guns.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Pool Guns
-              <p></p>
-            </h4>
-            <h5>45 EGP</h5>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-
-
-
-
-
-      </div>
 
     </div>
   </section>
@@ -347,8 +284,8 @@
 
       <div class="location_delivery">
         <a href="https://goo.gl/maps/ggJ1W4PruquoKisU6">Our Location</a>
-        <a href="../../footer/delivery&shipment/D&S.html">Delivery & Shipment</a>
-        <a href="../../footer/customersReviews/CR.html">Customers Reviews</a>
+        <a href="../delivery&shipment/D&S.html">Delivery & Shipment</a>
+        <a href="../customersReviews/CR.html">Customers Reviews</a>
       </div>
 
     </div>
@@ -364,7 +301,7 @@
       <h2>About Us</h2>
       <div class="contact_aboutUs">
         <!-- <a>Contact Us</a> -->
-        <a href="../../footer/aboutUs/aboutUs.html">About Us</a>
+        <a href="../aboutUs/aboutUs.html">About Us</a>
       </div>
 
 
@@ -384,6 +321,5 @@
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <script src="../../js/script.js"></script>
-<script src="../js/script.js"></script>
 
 </html>

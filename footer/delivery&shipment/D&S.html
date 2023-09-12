@@ -19,6 +19,7 @@
 
   <!-- Links To Sheets -->
   <link rel="stylesheet" href="../../css/global.css">
+  <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -28,7 +29,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
   <!-- End Fonts -->
-  <title>Sea Stuff Page</title>
+  <title>Delivery And Shipment Page</title>
 </head>
 
 <body>
@@ -47,8 +48,8 @@
 
 
       <li>
-        <a href="../../sideBarList/babies/babies.html" onclick=filterProducts(event) data-filter="babies"><img
-            class="icon" src="../../img/icons/baby-stroller-svgrepo-com.svg" alt="">
+        <a class="selected" href="../../sideBarList/babies/babies.html" onclick=filterProducts(event)
+          data-filter="babies"><img class="icon" src="../../img/icons/baby-stroller-svgrepo-com.svg" alt="">
           Babies</a>
       </li>
 
@@ -79,9 +80,9 @@
 
       </li>
 
-      <li onclick=filterProducts(event) data-filter="sea-stuff"><a class="selected"
-          href="../../sideBarList/seaStuff/seaStuff.html" onclick=filterProducts(event) data-filter="sea-stuff"><img
-            class="icon" src="../../img/icons/beachumbrella-svgrepo-com.svg" alt=""> Sea
+      <li onclick=filterProducts(event) data-filter="sea-stuff"><a href="../../sideBarList/seaStuff/seaStuff.html"
+          onclick=filterProducts(event) data-filter="sea-stuff"><img class="icon"
+            src="../../img/icons/beachumbrella-svgrepo-com.svg" alt=""> Sea
           Stuff</a>
       </li>
 
@@ -172,8 +173,8 @@
         <div class="verticalLine"></div>
         <div class="centerParent flex-column">
           <div class="mainTitle flex-column">
-            <h2 class="sectionTitle">Sea Stuff </h2>
-            <h3>SECTION</h3>
+            <h2 class="sectionTitle">Delivery & Shipment</h2>
+            <!-- <h3>SECTION</h3> -->
 
           </div>
           <div class="subTitle">
@@ -196,134 +197,39 @@
 
 
   <!-- (2) Start Main  -->
-  <section class="main-content repeated-container">
+  <section class="main-content repeated-container main-box">
     <div class="main-box flex-column gap-012">
 
+      <h2>- We deliver to all areas across Egypt.</h2>
+      <p>After successfully placing your order, our customer service will conduct a verification process by
+        call/WhatsApp,
+        then you can expect to receive your order within 3 to 5 business days.</p>
 
-      <div class="search-box flex-row">
-        <input placeholder="Looking For ?" type="text" class="search-input" id="search-input">
-        <div class="search-icon-box"><img src="../../img/icons/search-icon.svg" class="search-icon" alt=""></div>
-      </div>
+      <h3>- Shipment Fees</h3>
 
+      <p>Our shipment fees vary from a province to another, therefore please check the shipping fees before confirming
+        your
+        order.</p>
 
-      <div class="product-list repeated-container">
-        <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Crap Float.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Crap Float
-              <p></p>
-            </h4>
-            <h5>160 EGP</h5>
-            <h3 class="bdi">200 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+      <h3>- Delivery Options</h3>
+      <ul class="flex-column">
+        <li>
+          <h4>Home Delivery</h4>
+          <p>Orders are shipped Saturday to Thursday every week of the year.</p>
+        </li>
+        <li>
+          <h4>Click & Collect</h4>
+          <p>After placing your order, you’ll receive a confirmation call/Whatsapp message with order number. Please
+            wait for
+            an email and/or call from us telling you when it’s ready to collect.</p>
+          <p>We keep your order in store for 7 business days.</p>
+          <p>If you encounter any issues with the product, such as breakage or defects, please don't hesitate to contact
+            us. We will
+            gladly facilitate the return process, ensuring you receive a full refund promptly.
+          </p>
+        </li>
+      </ul>
 
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Pool Ball.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Pool Ball
-              <p></p>
-            </h4>
-            <h5>90 EGP</h5>
-            <h3 class="bdi">120 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Sea Mask.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Sea Mask
-              <p></p>
-            </h4>
-            <h5>125 EGP</h5>
-            <h3 class="bdi">160 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Spider Man Arm Bands.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Arm Bands
-              <p></p>
-            </h4>
-            <h5>90 EGP</h5>
-            <h3 class="bdi">110 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Unicorn Float.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Unicorn Float
-              <p></p>
-            </h4>
-            <h5>300 EGP</h5>
-            <h3 class="bdi">399 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column ">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Pool Guns With Characters.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Pool Guns With Characters
-              <p></p>
-            </h4>
-            <h5>60 EGP</h5>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div id="" class="product flex-column ">
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Sea Stuff/Pool Guns.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Pool Guns
-              <p></p>
-            </h4>
-            <h5>45 EGP</h5>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-
-
-
-
-
-      </div>
 
     </div>
   </section>
@@ -347,8 +253,8 @@
 
       <div class="location_delivery">
         <a href="https://goo.gl/maps/ggJ1W4PruquoKisU6">Our Location</a>
-        <a href="../../footer/delivery&shipment/D&S.html">Delivery & Shipment</a>
-        <a href="../../footer/customersReviews/CR.html">Customers Reviews</a>
+        <a href="../delivery&shipment/D&S.html">Delivery & Shipment</a>
+        <a>Customers Reviews</a>
       </div>
 
     </div>
@@ -364,7 +270,7 @@
       <h2>About Us</h2>
       <div class="contact_aboutUs">
         <!-- <a>Contact Us</a> -->
-        <a href="../../footer/aboutUs/aboutUs.html">About Us</a>
+        <a href="../aboutUs/aboutUs.html">About Us</a>
       </div>
 
 

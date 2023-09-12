@@ -46,7 +46,7 @@
 .CRS .customers-reviews {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 31.1rem);
+  grid-template-columns: repeat(auto-fill, 27.1rem);
   width: 100%;
   justify-content: center;
   gap: 1.4rem;
