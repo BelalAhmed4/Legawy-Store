@@ -40,6 +40,9 @@ Distance between every section:
   box-sizing: border-box;
   font-family: "Sniglet", cursive;
 }
+::selection {
+  /* background: var(--secondaryColor); */
+}
 html {
   font-size: 10px;
   scroll-behavior: smooth;
