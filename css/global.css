@@ -47,6 +47,9 @@ html {
 body {
   position: relative;
 }
+::selection {
+  background-color: transparent;
+}
 /********************************************/
 /* Root */
 :root {
