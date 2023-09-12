@@ -194,6 +194,9 @@ header {
   width: 11rem;
   /* margin-left: 1.2rem; */
 }
+.sideBar .logo-img {
+  padding: 1rem;
+}
 .header a {
   cursor: pointer;
 }
