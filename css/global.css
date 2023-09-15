@@ -473,10 +473,13 @@ img.icon {
   border-radius: 1.4rem;
   transition: all ease 0.3s;
 }
-.product-list .product:hover {
+@media (min-width: 960px) {
+  .product-list .product:hover {
   transform: translateY(-2%);
   box-shadow: 0px 0px 12px #bebebead, -10px 0px 32px #ffffff;
+  }
 }
+
 .product-list .product .addToCart {
   cursor: pointer;
   color: #fff;
