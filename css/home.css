@@ -76,6 +76,9 @@
   padding: 1.6rem 1.3rem;
 }
 .CRS .C-box .C-img-name h3 {
+  font-size: 1.6rem;
+  font-family: var(--firstFontFam);
+  font-weight: 500;
   color: var(--secondaryFontColor);
 }
 .CRS .C-box .C-img-name img {
@@ -84,8 +87,10 @@
   margin-bottom: 0.6rem;
 }
 .CRS .C-box .C-review h3 {
+  font-family: var(--firstFontFam);
+  font-weight: 500;
   color: var(--fontColor);
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 /* End Customer Review Section */
 /* Leading Imgs */
