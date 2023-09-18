@@ -32,10 +32,14 @@
   align-items: center;
 }
 .mid-section .offerCard strong {
+  font-weight: 400;
   color: #de221fab;
   font-size: 7.1rem !important;
 }
-
+.mid-section .offerCard h2 {
+  font-family: var(--firstFontFam);
+  font-weight: 300;
+}
 .mid-section .offerCard .offeredProducts img {
   width: 20%;
   max-width: 15rem;
@@ -61,6 +65,7 @@
   opacity: 0.3;
 }
 .CRS .C-box {
+  font-family: var(--firstFontFam);
   word-spacing: 0.2rem;
   justify-content: center;
   align-items: center;
@@ -85,6 +90,7 @@
 /* End Customer Review Section */
 /* Leading Imgs */
 .leadingImgs {
+  font-family: var(--firstFontFam);
   justify-content: center;
   align-items: center;
   display: flex;

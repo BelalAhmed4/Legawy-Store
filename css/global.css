@@ -38,7 +38,7 @@ Distance between every section:
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Sniglet", cursive;
+  /* font-family: "Sniglet", cursive; */
 }
 :focus {
   background: transparent;
@@ -59,6 +59,8 @@ body {
   --secondaryFontColor: #333333bd;
   --sectionPadding: 2.8rem;
   --textColor: #333;
+  --firstFontFam: "Sniglet", cursive;
+  --secondFontFam: "ComicNeue", cursive;
 }
 /* End Root */
 /********************************************/
@@ -201,10 +203,17 @@ header {
   cursor: pointer;
 }
 .header .menu-box {
+  font-family: var(--firstFontFam);
+  font-weight: 400;
   align-items: center;
   color: var(--fontColor);
   letter-spacing: 0.1rem;
   margin-right: 1.2rem;
+}
+h3 {
+  font-family: var(--firstFontFam);
+  font-weight: 500;
+  font-size: 1.6rem;
 }
 .header .userSpace {
   gap: 0.9rem;
@@ -216,6 +225,8 @@ header {
   color: #333333d3;
 }
 .header .userSpace .iconHolder h5 {
+  font-family: var(--firstFontFam);
+  font-weight: 100;
   text-align: center;
   color: #fff;
   padding: 0.2rem;
@@ -289,6 +300,7 @@ img.icon {
   width: 1.6rem;
 }
 #sideBar ul {
+  font-family: var(--firstFontFam);
   position: relative;
   background: #ffffffe8;
   height: 100%;
@@ -390,6 +402,8 @@ img.icon {
 /* End Body Absoluted Parts Styling */
 /* Repeated Section Title Text */
 .sectionTitle {
+  font-family: var(--firstFontFam);
+  font-weight: 500;
   font-size: 3.1rem;
   color: var(--fontColor);
 }
@@ -478,6 +492,8 @@ img.icon {
   box-shadow: 0px 0px 12px #bebebead, -10px 0px 32px #ffffff;
 }
 .product-list .product .addToCart {
+  font-family: var(--firstFontFam);
+  font-weight: 400;
   cursor: pointer;
   color: #fff;
   padding: 0.6rem 0.6rem;
@@ -503,11 +519,15 @@ img.icon {
   width: 100%;
 }
 .product-list .product h4 {
+  font-family: var(--firstFontFam);
+  font-weight: 500;
   margin-bottom: 0.4rem;
   font-size: 1.6rem;
   color: var(--fontColor);
 }
 .product-list .product h5 {
+  font-family: var(--firstFontFam);
+  font-weight: 500;
   margin-bottom: 0.4rem;
   font-size: 1.4rem;
   color: rgb(123, 151, 147);
@@ -526,6 +546,10 @@ img.icon {
   font-size: 1.2rem;
   position: relative;
   color: rgba(123, 151, 147, 0.5);
+}
+.product-list .product h3 {
+  font-family: var(--secondFontFam);
+  font-weight: 500;
 }
 .product-list .product h3:before {
   content: "";
@@ -554,8 +578,9 @@ img.icon {
 }
 .offerBand::before {
   content: "25%";
+  font-family: var(--firstFontFam);
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #fefefe;
   padding: 0.4rem;
   position: absolute;
@@ -575,6 +600,8 @@ img.icon {
   /* position: absolute;
   width: 100vw;
   bottom: 0; */
+  font-family: var(--secondFontFam);
+  font-weight: 500;
   padding: var(--sectionPadding);
   display: flex;
   height: 30vh;
