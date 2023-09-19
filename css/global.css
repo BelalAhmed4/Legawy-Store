@@ -566,12 +566,14 @@ img.icon {
   top: 50%;
   transform: translateY(-50%);
 }
-.product-list .product .product-details h6 {
-  font-size: 1.1rem;
+.product-list .product .product-details .favouriteBtn {
   position: absolute;
   bottom: 0.6rem;
   right: 0.6rem;
+}
+.product-list .product .product-details .favouriteBtn .addToFav {
   color: var(--secondaryFontColor);
+  font-size: 1.4rem;
 }
 .product-list .product-details {
   display: flex;
