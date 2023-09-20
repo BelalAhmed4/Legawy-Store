@@ -608,8 +608,7 @@ img.icon {
   /* position: absolute;
   width: 100vw;
   bottom: 0; */
-  font-family: var(--secondFontFam);
-  font-weight: 500;
+
   padding: var(--sectionPadding);
   display: flex;
   height: 30vh;
@@ -627,6 +626,8 @@ img.icon {
   }
 }
 .footer .footerBox {
+  font-family: var(--secondFontFam);
+  font-weight: 500;
   width: calc(100% - var(--sectionPadding) / 3);
   /* border: solid 1px #333; */
   justify-content: center;

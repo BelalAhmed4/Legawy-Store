@@ -71,3 +71,13 @@ let leadingImg = document.querySelectorAll('.leadingImg')
 leadingImg.forEach(element => {
   element.classList.add('leadingBand')
 })
+
+// Add To Fav
+
+
+// Change icon color when click
+let addToFav = document.getElementById('addToFav')
+function addToFav() {
+  addToFav.classList.toggle(".fa-regular")
+  addToFav.classList.toggle(".fa-solid")
+}
