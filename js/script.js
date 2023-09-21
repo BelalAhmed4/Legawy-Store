@@ -76,8 +76,8 @@ leadingImg.forEach(element => {
 
 
 // Change icon color when click
-let addToFav = document.getElementById('addToFav')
-function addToFav() {
-  addToFav.classList.toggle(".fa-regular")
-  addToFav.classList.toggle(".fa-solid")
-}
+// let addToFav = document.getElementById('addToFav')
+// function addToFav() {
+//   addToFav.classList.toggle(".fa-regular")
+//   addToFav.classList.toggle(".fa-solid")
+// }
