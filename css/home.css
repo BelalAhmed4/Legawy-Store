@@ -10,6 +10,8 @@
   padding-inline: 1.1rem;
   padding-block: 1.4rem;
   background-image: url("../img/midSectionImgs/wave-haikei\ \(1\).svg");
+  /* background-image: url("../img/midSectionImgs/hallowenBackground.webp"); */
+  background-position: center;
   font-size: 1.6rem;
   color: #333333d3;
   justify-content: space-around;
@@ -34,7 +36,7 @@
 .mid-section .offerCard strong {
   font-weight: 400;
   color: #de221fab;
-  font-size: 7.1rem !important;
+  font-size: 9.1rem !important;
 }
 .mid-section .offerCard h2 {
   font-family: var(--firstFontFam);
