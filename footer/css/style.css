@@ -5,11 +5,13 @@
   line-height: 1.4;
 }
 .main-box p {
+  font-family: var(--firstFontFam);
   font-size: 1.3rem;
   margin-bottom: 0.8rem;
   color: var(--secondaryFontColor);
 }
 .main-box h2 {
+  font-family: var(--secondFontFam);
   letter-spacing: 0.1rem;
   font-size: 1.8rem;
   color: var(--fontColor);
