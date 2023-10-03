@@ -641,6 +641,7 @@ img.icon {
   display: block;
 }
 .footer a {
+  font-family: var(--firstFontFam);
   display: block;
   text-decoration: none;
   font-weight: 400;
