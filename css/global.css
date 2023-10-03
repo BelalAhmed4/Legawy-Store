@@ -635,6 +635,7 @@ img.icon {
 }
 .footer h2 {
   color: var(--fontColor);
+  font-family: var(--firstFontFam);
   font-weight: 700;
   font-size: 1.8rem;
   cursor: pointer;
