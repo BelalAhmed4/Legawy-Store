@@ -5,7 +5,7 @@
   align-items: center;
 }
 .main-box .forEmpty h2 {
-  font-family: var(--secondFontFam);
+  font-family: var(--firstFontFam);
   font-size: 1.3rem;
   color: var(--secondaryFontColor);
 }
