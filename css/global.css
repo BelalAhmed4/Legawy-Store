@@ -435,6 +435,9 @@ img.icon {
 .main-box {
   min-height: 60vh;
 }
+.main-box.flex-column{
+  align-items:center;
+}
 .main-box .search-box {
   margin-top: 1.1rem;
   align-items: center;
