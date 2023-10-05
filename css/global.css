@@ -38,7 +38,6 @@ Distance between every section:
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Sniglet", cursive; */
 }
 :focus {
   background: transparent;
@@ -46,6 +45,11 @@ Distance between every section:
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+}
+@media (min-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
 }
 body {
   position: relative;
@@ -435,8 +439,8 @@ img.icon {
 .main-box {
   min-height: 60vh;
 }
-.main-box.flex-column{
-  align-items:center;
+.main-box.flex-column {
+  align-items: center;
 }
 .main-box .search-box {
   margin-top: 1.1rem;
