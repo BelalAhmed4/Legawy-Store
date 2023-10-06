@@ -64,7 +64,7 @@ body {
   --sectionPadding: 2.8rem;
   --textColor: #333;
   --firstFontFam: "Sniglet", cursive;
-  --secondFontFam: "ComicNeue", cursive;
+  --secondFontFam: "ComicNeue", "Sniglet";
 }
 /* End Root */
 /********************************************/
