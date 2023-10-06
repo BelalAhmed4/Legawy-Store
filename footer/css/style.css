@@ -12,6 +12,7 @@
 }
 .main-box h2 {
   font-family: var(--secondFontFam);
+  font-weight: 500;
   margin-bottom: 1.6rem;
   letter-spacing: 0.1rem;
   font-size: 1.8rem;
