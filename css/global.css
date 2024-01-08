@@ -114,6 +114,9 @@ body {
 .gap-102 {
   gap: 1.2rem;
 }
+.gap-204 {
+  gap: 2.4rem;
+}
 /* Grid Column Gap*/
 .column-gap02 {
   column-gap: 0.2rem;
@@ -603,6 +606,8 @@ img.sideBar__icons {
 /* end main box for content */
 /* Footer Section */
 .footer {
+  gap: 5%;
+  justify-content: space-around;
   padding: var(--sectionPadding);
   height: 30vh;
   background-color: #eee;
@@ -611,11 +616,11 @@ img.sideBar__icons {
 }
 @media (max-width: 767px) {
   .footer {
+    gap: 1.6rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
     height: fit-content;
-    gap: 1.2rem;
   }
 }
 .footer .footerBox {
@@ -623,7 +628,6 @@ img.sideBar__icons {
   font-weight: 500;
   width: calc(100% - var(--sectionPadding) / 3);
   justify-content: center;
-  gap: 1.1rem;
 }
 .footer h2 {
   color: var(--fontColor);
