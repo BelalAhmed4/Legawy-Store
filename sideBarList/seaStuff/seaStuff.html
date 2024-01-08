@@ -11,7 +11,6 @@
     content="Discover a treasure trove of one-of-a-kind toys, offering endless joy and imagination.">
   <meta name="keywords" content="Lego,Toys,Babies,BestWay,Blocks,Puzzle,Mekano">
   <meta name="robots" content="noindex, nofollow">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
 
   <!-- End Meta -->
@@ -21,7 +20,7 @@
   <link rel="stylesheet" href="../../css/global.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <!-- End Links To Sheets -->
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +29,7 @@
     href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Sniglet:wght@400;800&display=swap"
     rel="stylesheet">
   <!-- End Fonts -->
-  <title>Sea Stuff Page</title>
+  <title>SeaStuff Page</title>
 </head>
 
 <body>
@@ -43,38 +42,39 @@
 
       <li>
         <a href="../../index.html" class="closeOnClick" onclick=filterProducts(event) data-filter="product"><img
-            class="icon" src="../../img/icons/home-svgrepo-com.svg" alt="">
+            class="sideBar__icons" src="../../img/icons/home-svgrepo-com.svg" alt="">
           home</a>
       </li>
 
 
       <li>
         <a href="../../sideBarList/babies/babies.html" onclick=filterProducts(event) data-filter="babies"><img
-            class="icon" src="../../img/icons/baby-stroller-svgrepo-com.svg" alt="">
+            class="sideBar__icons" src="../../img/icons/baby-stroller-svgrepo-com.svg" alt="">
           Babies</a>
       </li>
 
       <li>
         <a href="../../sideBarList/birthDay&gifts/BD&G.html" onclick=filterProducts(event) data-filter="babies"><img
-            class="icon" src="../../img/icons/gift-svgrepo-com.svg" alt="">
+            class="sideBar__icons" src="../../img/icons/gift-svgrepo-com.svg" alt="">
           Birth Day & Gifts</a>
       </li>
 
       <li class="toys-category">
 
-        <a class="showToys" onclick="showSubList()"><img class="icon"
+        <a class="showToys" onclick="showSubList()"><img class="sideBar__icons"
             src="../../img/icons/joystick-gamepad-svgrepo-com.svg" alt="">Toys<span class="flex-row"><ion-icon
               class="down-chevron" name="chevron-down-outline"></ion-icon></span></a>
 
         <ul class="toysList  subList">
           <li><a href="../../sideBarList/toys/boys/boys.html" onclick=filterProducts(event) data-filter="boys"><img
-                class="icon" src="../../img/icons/boy-svgrepo-com.svg" alt="">Boys</a></li>
+                class="sideBar__icons" src="../../img/icons/boy-svgrepo-com.svg" alt="">Boys</a></li>
           <li><a href="../../sideBarList/toys/girls/girls.html" onclick=filterProducts(event) data-filter="girls"><img
-                class="icon" src="../../img/icons/girl-svgrepo-com.svg" alt="">
+                class="sideBar__icons" src="../../img/icons/girl-svgrepo-com.svg" alt="">
               Girls</a>
           </li>
           <li><a href="../../sideBarList/toys/family/family.html" onclick=filterProducts(event)
-              data-filter="family"><img class="icon" src="../../img/icons/family-3-generations-svgrepo-com.svg" alt="">
+              data-filter="family"><img class="sideBar__icons"
+                src="../../img/icons/family-3-generations-svgrepo-com.svg" alt="">
               Family</a>
           </li>
         </ul>
@@ -83,12 +83,12 @@
 
       <li onclick=filterProducts(event) data-filter="sea-stuff"><a class="selected"
           href="../../sideBarList/seaStuff/seaStuff.html" onclick=filterProducts(event) data-filter="sea-stuff"><img
-            class="icon" src="../../img/icons/beachumbrella-svgrepo-com.svg" alt=""> Sea
+            class="sideBar__icons" src="../../img/icons/beachumbrella-svgrepo-com.svg" alt=""> Sea
           Stuff</a>
       </li>
 
       <li class="educational-category">
-        <a class="showEducation" onclick="showSubList2()" data-filter="educational"><img class="icon"
+        <a class="showEducation" onclick="showSubList2()" data-filter="educational"><img class="sideBar__icons"
             src="../../img/icons/brainIcon.svg" alt="">
           Educational<span class="flex-row"><ion-icon class="down-chevron"
               name="chevron-down-outline"></ion-icon></span></a>
@@ -96,17 +96,18 @@
         <ul class="educationList subList">
           <li>
             <a href="../../sideBarList/educational/lego/lego.html" onclick=filterProducts(event) data-filter="lego">
-              <img class="icon" src="../../img/icons/lego-2-svgrepo-com.svg" alt="">
+              <img class="sideBar__icons" src="../../img/icons/lego-2-svgrepo-com.svg" alt="">
               Lego</a>
           </li>
           <li>
             <a href="../../sideBarList/educational/puzzle/puzzle.html" onclick=filterProducts(event)
-              data-filter="puzzle"><img class="icon" src="../../img/icons/puzzle-svgrepo-com.svg" alt="">
+              data-filter="puzzle"><img class="sideBar__icons" src="../../img/icons/puzzle-svgrepo-com.svg" alt="">
               Puzzle</a>
           </li>
           <li>
             <a href="../../sideBarList/educational/makano/mekano.html" onclick=filterProducts(event)
-              data-filter="mekano"><img class="icon" src="../../img/icons/hammer-wrench-svgrepo-com.svg" alt="">
+              data-filter="mekano"><img class="sideBar__icons" src="../../img/icons/hammer-wrench-svgrepo-com.svg"
+                alt="">
               Mekano</a>
           </li>
           <li>
@@ -119,17 +120,17 @@
   </div>
   <!-- (3) header -->
   <header>
-    <div class="header repeated-container flex-row">
-      <div class="userSpace flex-row">
+    <div class="header main-container flex-row">
+      <div class="userSpace gap-08 flex-row">
         <div class="favourites iconHolder">
-          <h5>0</h5>
+          <p>0</p>
 
           <a href="../../userSpace/liked-P/liked-P.html">
             <ion-icon class="headerIcon" name="heart-outline"></ion-icon>
           </a>
         </div>
         <div class="cart iconHolder">
-          <h5>0</h5>
+          <p>0</p>
           <a href="../../userSpace/cart/cart.html"><ion-icon class="headerIcon" name="bag-outline"></ion-icon>
           </a>
         </div>
@@ -143,7 +144,7 @@
   </header>
   <!-- end header -->
   <!-- (4) Start contact boxes -->
-  <div class="contact-container flex-column">
+  <div class="social-media flex-column">
 
     <a href="https://www.facebook.com/legawy" class="contact-box flex-row facebook"><img
         src="../../img/icons/facebook-color-svgrepo-com.svg" alt=""></a>
@@ -167,14 +168,14 @@
 
 
   <!-- (1) Start Title & Announcements Part -->
-  <section class="mid-section repeated-container repeatedSection">
+  <section class="announcements main-container full-width-section">
 
     <div class="introduction flex-column">
-      <div class="heroTitle forTitle flex-row">
+      <div class="heroTitle gap-102 titleBox flex-row">
         <div class="verticalLine"></div>
         <div class="centerParent flex-column">
           <div class="mainTitle flex-column">
-            <h2 class="sectionTitle">Sea Stuff </h2>
+            <h2 class="titleBox__text">SeaStuff </h2>
             <h3>SECTION</h3>
 
           </div>
@@ -198,8 +199,8 @@
 
 
   <!-- (2) Start Main  -->
-  <section class="main-content repeated-container">
-    <div class="main-box flex-column gap-012">
+  <section class="main-content main-container">
+    <div class="main-box flex-column gap-102">
 
 
       <div class="search-box flex-row">
@@ -208,183 +209,183 @@
       </div>
 
 
-      <div class="product-list repeated-container">
+      <div class="product-list main-container">
         <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="addToWishList">
+        <div class="product flex-column sea-stuff">
+          <div class="added">
 
-            <div class="atwa">
+            <div class="addToWishList">
               <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
             </div>
 
 
-            <div class="adtwl"></div>
+            <div class="added"></div>
             <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
           </div>
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../img/Products/Sea Stuff/Crap Float.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Crap Float
-              <p></p>
-            </h4>
-            <h5>160 EGP</h5>
+          <div class="product__imgParent flex-column"> <img loading="lazy"
+              src="../../img/Products/SeaStuff/CrapFloat.png" class="product__img" alt=""></div>
+          <div class="product-details flex-column">
+            <p>Crap Float
+
+              </h4>
+            <p>160 EGP</p>
             <h3 class="bdi">200 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+            <div class="atc">
+              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
 
             </div>
           </div>
         </div>
         <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="addToWishList">
+        <div class="product flex-column sea-stuff">
+          <div class="added">
 
-            <div class="atwa">
+            <div class="addToWishList">
               <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
             </div>
 
 
-            <div class="adtwl"></div>
+            <div class="added"></div>
             <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
           </div>
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../img/Products/Sea Stuff/Pool Ball.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Pool Ball
-              <p></p>
-            </h4>
-            <h5>90 EGP</h5>
+          <div class="product__imgParent flex-column"> <img loading="lazy"
+              src="../../img/Products/SeaStuff/PoolBall.png" class="product__img" alt=""></div>
+          <div class="product-details flex-column">
+            <p>Pool Ball
+
+              </h4>
+            <p>90 EGP</p>
             <h3 class="bdi">120 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+            <div class="atc">
+              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
 
             </div>
           </div>
         </div>
         <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="addToWishList">
+        <div class="product flex-column sea-stuff">
+          <div class="added">
 
-            <div class="atwa">
+            <div class="addToWishList">
               <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
             </div>
 
 
-            <div class="adtwl"></div>
+            <div class="added"></div>
             <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
           </div>
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../img/Products/Sea Stuff/Sea Mask.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Sea Mask
-              <p></p>
-            </h4>
-            <h5>125 EGP</h5>
+          <div class="product__imgParent flex-column"> <img loading="lazy" src="../../img/Products/SeaStuff/SeaMask.png"
+              class="product__img" alt=""></div>
+          <div class="product-details flex-column">
+            <p>Sea Mask
+
+              </h4>
+            <p>125 EGP</p>
             <h3 class="bdi">160 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+            <div class="atc">
+              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
 
             </div>
           </div>
         </div>
         <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="addToWishList">
+        <div class="product flex-column sea-stuff">
+          <div class="added">
 
-            <div class="atwa">
+            <div class="addToWishList">
               <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
             </div>
 
 
-            <div class="adtwl"></div>
+            <div class="added"></div>
             <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
           </div>
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../img/Products/Sea Stuff/Spider Man Arm Bands.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Arm Bands
-              <p></p>
-            </h4>
-            <h5>90 EGP</h5>
+          <div class="product__imgParent flex-column"> <img loading="lazy"
+              src="../../img/Products/SeaStuff/SpiderManArmBands.png" class="product__img" alt=""></div>
+          <div class="product-details flex-column">
+            <p>Arm Bands
+
+              </h4>
+            <p>90 EGP</p>
             <h3 class="bdi">110 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+            <div class="atc">
+              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
 
             </div>
           </div>
         </div>
         <!-- **************************** -->
-        <div id="" class="product flex-column sea-stuff">
-          <div class="addToWishList">
+        <div class="product flex-column sea-stuff">
+          <div class="added">
 
-            <div class="atwa">
+            <div class="addToWishList">
               <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
             </div>
 
 
-            <div class="adtwl"></div>
+            <div class="added"></div>
             <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
           </div>
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../img/Products/Sea Stuff/Unicorn Float.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Unicorn Float
-              <p></p>
-            </h4>
-            <h5>300 EGP</h5>
+          <div class="product__imgParent flex-column"> <img loading="lazy"
+              src="../../img/Products/SeaStuff/UnicornFloat.png" class="product__img" alt=""></div>
+          <div class="product-details flex-column">
+            <p>Unicorn Float
+
+              </h4>
+            <p>300 EGP</p>
             <h3 class="bdi">399 EGP</h3>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+            <div class="atc">
+              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
 
             </div>
           </div>
         </div>
         <!-- **************************** -->
-        <div id="" class="product flex-column">
-          <div class="addToWishList">
+        <div class="product flex-column">
+          <div class="added">
 
-            <div class="atwa">
+            <div class="addToWishList">
               <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
             </div>
 
 
-            <div class="adtwl"></div>
+            <div class="added"></div>
             <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
           </div>
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../img/Products/Sea Stuff/Pool Guns With Characters.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Pool Guns With Characters
-              <p></p>
-            </h4>
-            <h5>60 EGP</h5>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+          <div class="product__imgParent flex-column"> <img loading="lazy"
+              src="../../img/Products/SeaStuff/PoolGunsWithCharacters.png" class="product__img" alt=""></div>
+          <div class="product-details flex-column">
+            <p>Pool Guns With Characters
+
+              </h4>
+            <p>60 EGP</p>
+            <div class="atc">
+              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
 
             </div>
           </div>
         </div>
         <!-- **************************** -->
-        <div id="" class="product flex-column">
-          <div class="addToWishList">
+        <div class="product flex-column">
+          <div class="added">
 
-            <div class="atwa">
+            <div class="addToWishList">
               <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
             </div>
 
 
-            <div class="adtwl"></div>
+            <div class="added"></div>
             <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
           </div>
-          <div class="product-img-parent flex-column"> <img loading="lazy"
-              src="../../img/Products/Sea Stuff/Pool Guns.png" class="product-img" alt=""></div>
-          <div class="product-details">
-            <h4>Pool Guns
-              <p></p>
-            </h4>
-            <h5>45 EGP</h5>
-            <div class="atcParent">
-              <button class="addToCart flex-row gap-012">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
+          <div class="product__imgParent flex-column"> <img loading="lazy"
+              src="../../img/Products/SeaStuff/PoolGuns.png" class="product__img" alt=""></div>
+          <div class="product-details flex-column">
+            <p>Pool Guns
+
+              </h4>
+            <p>45 EGP</p>
+            <div class="atc">
+              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
 
             </div>
           </div>
@@ -402,10 +403,10 @@
   <!-- End Main -->
 
 
-  <!-- Start Footer Section -->
-  <section class="footer">
+  <!-- Start footer flex-row  Section -->
+  <section class="footer flex-row ">
 
-    <div class="contact footerBox flex-column ">
+    <div class="contact footer flex-row Box flex-column ">
       <div class="legawyImg">
         <img src="../../img/Logo.png" alt="">
       </div>
@@ -414,7 +415,7 @@
 
 
 
-    <div class="discover footerBox flex-column">
+    <div class="discover footer flex-row Box flex-column">
       <h2>Discover</h2>
 
       <div class="location_delivery">
@@ -431,7 +432,7 @@
 
 
 
-    <div class="aboutUs footerBox flex-column">
+    <div class="aboutUs footer flex-row Box flex-column">
 
       <h2>About Us</h2>
       <div class="contact_aboutUs">
@@ -450,12 +451,13 @@
 
 
   </section>
-  <!-- End Footer Section -->
-
+  <!-- End footer flex-row  Section -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script src="../../js/script.js"></script>
-<script src="../js/script.js"></script>
+
+
 
 </html>

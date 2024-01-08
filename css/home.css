@@ -1,5 +1,5 @@
 /* Mid Section For Offer  */
-.mid-section .offerCard {
+.announcements .offerCard {
   display: flex;
   background-repeat: no-repeat;
   flex-direction: column;
@@ -19,37 +19,37 @@
   /* gap: 5.1rem; */
 }
 @media (min-width: 567px) {
-  .mid-section .offerCard {
+  .announcements .offerCard {
     height: 80vh;
   }
 }
-.mid-section .offerInfo {
+.announcements .offerInfo {
   width: 80%;
 }
-.mid-section .offeredProducts {
+.announcements .offeredProducts {
   justify-content: center;
   gap: 1.4rem;
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
 }
-.mid-section .offerCard strong {
+.announcements .offerCard strong {
   font-weight: 400;
   color: #de221fab;
   font-size: 9.1rem !important;
 }
-.mid-section .offerCard h2 {
+.announcements .offerCard h2 {
   font-family: var(--firstFontFam);
   font-weight: 300;
 }
-.mid-section .offerCard .offeredProducts img {
+.announcements .offerCard .offeredProducts img {
   width: 20%;
   max-width: 15rem;
 }
 /* End Mid Title Section */
 
 /* Customers Reviews Section */
-.CRS .customers-reviews {
+.customerReviewSection .customers-reviews {
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fill, 27.1rem);
@@ -58,7 +58,7 @@
   gap: 1.4rem;
   padding: 7.5rem 0.8rem;
 }
-.CRS .customers-reviews .backgroundImg {
+.customerReviewSection .customers-reviews .backgroundImg {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -66,7 +66,7 @@
   z-index: -1;
   opacity: 0.3;
 }
-.CRS .C-box {
+.customerReviewSection .customerBox {
   font-family: var(--firstFontFam);
   word-spacing: 0.2rem;
   justify-content: center;
@@ -77,18 +77,18 @@
   background-color: #eeeeeeee;
   padding: 1.6rem 1.3rem;
 }
-.CRS .C-box .C-img-name h3 {
+.customerReviewSection .customerBox .C-img-name h3 {
   font-size: 1.6rem;
   font-family: var(--firstFontFam);
   font-weight: 500;
   color: var(--secondaryFontColor);
 }
-.CRS .C-box .C-img-name img {
+.customerReviewSection .customerBox .C-img-name img {
   width: 11rem;
   border-radius: 0.6rem;
   margin-bottom: 0.6rem;
 }
-.CRS .C-box .C-review h3 {
+.customerReviewSection .customerBox .C-review h3 {
   font-family: var(--firstFontFam);
   font-weight: 500;
   color: var(--fontColor);
@@ -96,6 +96,10 @@
 }
 /* End Customer Review Section */
 /* Leading Imgs */
+.main-container.toysCollection {
+  align-items: center;
+  gap: 3.2rem;
+}
 .leadingImgs {
   font-family: var(--firstFontFam);
   justify-content: center;
@@ -143,8 +147,8 @@
   font-weight: 500;
   font-size: 1.4rem;
   border-radius: 50%;
-  width: 5.4rem;
-  height: 5.4rem;
+  width: 6.9rem;
+  height: 6.9rem;
   background-color: #2cc980;
   top: 1.1rem;
   left: 1.1rem;

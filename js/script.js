@@ -60,12 +60,12 @@ bodyOpacity.addEventListener('mouseup', function (event) {
 });
 
 // End sidebar canceling
-// Offer On sea Stuff Products
+// Offer On SeaStuff Products
 let seaStuff = document.querySelectorAll(".sea-stuff")
 seaStuff.forEach(element => {
   element.classList.add('offerBand');
 });
-// end Offer On sea Stuff Products
+// end Offer On SeaStuff Products
 // Leading imgs Leding Band
 let leadingImg = document.querySelectorAll('.leadingImg')
 leadingImg.forEach(element => {

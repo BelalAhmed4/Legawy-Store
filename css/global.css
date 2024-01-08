@@ -5,26 +5,20 @@
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
 - Font weights
-Default: 
-Medium: 
-Semi-bold: 
-Bold: 
+Main: 500
+Secondary: 400
 
 - Font Family : Sniglet, Arial, Hel;
 
 - Line heights
 Default: 1
-Small:
-Medium:
+line heights used : 5 / 4.2rem / 1.7 / 1.4
 
 Paragraph default:
-- Letter spacing
+- Letter spacing used : 0.1rem
 
 --- 02 COLORS
 - Primary: rgb(192, 240, 233)
--dark icons:
-- Accents:
-- Greys:
 
 --- 05 WHITESPACE
 Distance between every section: 
@@ -38,9 +32,6 @@ Distance between every section:
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-:focus {
-  background: transparent;
 }
 html {
   font-size: 10px;
@@ -120,8 +111,8 @@ body {
 .gap-08 {
   gap: 0.8rem;
 }
-.gap-012 {
-  gap: 0.12rem;
+.gap-102 {
+  gap: 1.2rem;
 }
 /* Grid Column Gap*/
 .column-gap02 {
@@ -133,8 +124,8 @@ body {
 .column-gap08 {
   column-gap: 0.8rem;
 }
-.column-gap012 {
-  column-gap: 0.12rem;
+.column-gap102 {
+  column-gap: 1.2rem;
 }
 /* Grid Row Gap */
 .row-gap02 {
@@ -146,8 +137,8 @@ body {
 .row-gap08 {
   row-gap: 0.8rem;
 }
-.row-gap012 {
-  row-gap: 0.12rem;
+.row-gap102 {
+  row-gap: 1.2rem;
 }
 /********************************************/
 /* End TG */
@@ -155,26 +146,29 @@ body {
 
 /* Start The Styling Of The Main Fixed Content Of The Page */
 /* Special Styling For Special Purpose */
-.repeated-container {
+section {
+  margin-bottom: 6.2rem;
+}
+/* "main-container" Class Is A Repeated Class For Most Of Page Parent Elements That Keeps Content Centered In The Page With The Same Ratio Of Width */
+.main-container {
   width: 90vw;
   margin-inline: auto;
 }
 .hidden {
   display: none !important;
 }
+/* "show" Class is Mainly For Showing Side Bar When Click On Menu Icon  */
 .show {
   left: 0vw !important;
 }
+/* "block" Class Is mainly Used For Showing A Hidden Element When Certain Event Happens As Clicking On A Certain Icon */
 .block {
   display: block !important;
 }
 /* End Special Styling For Special Purpose */
 
-section {
-  margin-bottom: 6.2rem;
-}
 /* Start Body Absoluted Parts Styling */
-/* Body Opacity When Clicking Menu  */
+/* Body Opacity When Clicking Menu */
 .Opacity {
   display: none;
   z-index: 1001;
@@ -198,7 +192,6 @@ header {
 }
 .header .logo-img {
   width: 11rem;
-  /* margin-left: 1.2rem; */
 }
 .sideBar .logo-img {
   padding: 1rem;
@@ -207,102 +200,99 @@ header {
   cursor: pointer;
 }
 .header .menu-box {
-  font-family: var(--firstFontFam);
-  font-weight: 400;
   align-items: center;
   color: var(--fontColor);
+  font-family: var(--firstFontFam);
+  font-weight: 400;
   letter-spacing: 0.1rem;
   margin-right: 1.2rem;
 }
 .header .menu-box h3 {
   font-family: var(--firstFontFam);
-  font-weight: 500;
   font-family: var(--firstFontFam);
-  font-weight: 500;
   font-size: 1.6rem;
+  font-weight: 500;
 }
-.header .userSpace {
+/* .header .userSpace {
   gap: 0.9rem;
-}
+} */
 .header .userSpace .headerIcon,
 .fa-bars {
   cursor: pointer;
   font-size: 1.6rem;
   color: #333333d3;
 }
-.header .userSpace .iconHolder h5 {
+.header .userSpace .iconHolder p {
+  background-color: #0194de8c;
+  border-radius: 50%;
+  color: #fff;
   font-family: var(--firstFontFam);
   font-weight: 100;
-  text-align: center;
-  color: #fff;
   padding: 0.2rem;
+  text-align: center;
   transform: translate(0.8rem, 0.8rem);
-  border-radius: 50%;
-  background-color: #0194de8c;
 }
 /* End Header */
 /* Start contact boxes */
-.contact-container {
-  position: fixed;
+.social-media {
   align-items: center;
+  border-radius: 0.8rem;
   justify-content: center;
-  z-index: 99;
+  opacity: 0.5;
+  position: fixed;
   right: 0;
   transform: translateY(10%);
-  border-radius: 0.8rem;
-  opacity: 0.5;
   transition: all ease 0.4s;
+  z-index: 99;
 }
-.contact-container:hover {
+.social-media:hover {
   opacity: 1;
 }
-.contact-container .contact-box {
-  /* padding-block: 1.8rem;
-  padding-inline: 1.8rem; */
-  width: 3.4rem;
-  height: 3.4rem;
-  border-radius: 0.1rem;
-  border-collapse: collapse;
-  perspective: 5rem;
-  justify-content: center;
+.social-media .contact-box {
   align-items: center;
+  border-collapse: collapse;
+  border-radius: 0.1rem;
+  height: 3.4rem;
+  justify-content: center;
+  perspective: 5rem;
+  width: 3.4rem;
 }
-.contact-container .contact-box img {
+.social-media .contact-box img {
   width: 1.6rem;
   transition: all ease 0.3s;
 }
 /* style for each icon */
-.contact-container .facebook {
+.social-media .facebook {
   background-color: var(--secondaryColor);
 }
-.contact-container .telegram {
+.social-media .telegram {
   background-color: #37bbfe;
 }
-.contact-container .whatsapp {
+.social-media .whatsapp {
   background-color: #2cc980;
 }
-.contact-container .instagram {
+.social-media .instagram {
   background-color: #ee4a73;
 }
-.contact-container .contact-box img:hover {
+.social-media .contact-box img:hover {
   transform: translate3d(0, 0, 1.4rem);
 }
 /* End contact boxes */
 
 /* start sidebar */
 #sideBar {
-  text-align: center;
-  position: fixed;
-  left: -100vw;
-  width: 65vw;
-  height: 100vh;
-  z-index: 1002;
   background-color: #adacac62;
   color: #ffffff;
+  height: 100vh;
+  left: -100vw;
   line-height: 5;
+  position: fixed;
+  text-align: center;
   transition: all ease 0.3s;
+  width: 65vw;
+  z-index: 1002;
 }
-img.icon {
+img.sideBar__icons {
   width: 1.6rem;
 }
 #sideBar ul {
@@ -316,7 +306,7 @@ img.icon {
 }
 #sideBar ul li {
   width: 100%;
-  line-height: 60px;
+  line-height: 5;
   border-bottom: 1px solid rgb(0, 0, 0, 105);
 }
 #sideBar ul li a {
@@ -359,7 +349,6 @@ img.icon {
   position: static;
   display: block;
 }
-
 #sideBar ul .educational-category:hover > ul {
   position: static;
   display: block;
@@ -400,43 +389,41 @@ img.icon {
 }
 #sideBar .subList {
   height: fit-content !important;
-  margin-top: -6rem;
+  margin-top: -8.1rem;
   width: 30vw;
   right: -30vw;
   position: absolute !important;
   display: none;
 }
 /* End Body Absoluted Parts Styling */
-/* Repeated Section Title Text */
-.sectionTitle {
+/* Title Box  */
+.titleBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.1rem;
+}
+/* End Title Box */
+/* title Box text  */
+.titleBox__text {
   font-family: var(--firstFontFam);
   font-weight: 500;
   font-size: 3.1rem;
   color: var(--fontColor);
 }
 @media (min-width: 320px) and (max-width: 623px) {
-  .sectionTitle {
+  .titleBox__text {
     font-size: 2.4rem;
   }
 }
-/* End Repeated Section Title Text*/
-/* Repeated Section Title Text */
-.forTitle {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.1rem;
-}
-/* End Repeated Section Title Text */
-/* Repeated Section */
-.repeatedSection {
+/* End title Box text */
+/* "full-width-section" Is A Class To Any Section Container To Be Full Screen Width With Flex Styling  */
+.full-width-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 /* End Repeated Section */
-
-/* start Main Box For Content */
-
+/* Start Main Box For Content */
 .main-box {
   min-height: 60vh;
 }
@@ -502,20 +489,20 @@ img.icon {
     box-shadow: 0px 0px 12px #bebebead, -10px 0px 32px #ffffff;
   }
 }
-.product .addToWishList {
+.product .added {
   z-index: 9;
   position: absolute;
   width: fit-content;
   top: 1.3rem;
   left: 1.1rem;
 }
-.product .addToWishList i.fa-check {
+.product .added i.fa-check {
   display: none;
 }
-.product .addToWishList i:active {
+.product .added i:active {
   transform: scale(0.96);
 }
-.product-list .product .addToCart {
+.product-list .product .atc__btn {
   font-family: var(--firstFontFam);
   font-weight: 400;
   cursor: pointer;
@@ -527,45 +514,39 @@ img.icon {
   transition: all 0.2s ease;
   align-items: center;
 }
-.product-list .product .addToCart:active {
+.product-list .product .atc__btn:active {
   transform: scale(0.96);
 }
-.product-list .product:focus {
-  transform: translate3d(0, 0, 2rem);
-}
-.product-list .product .product-img-parent {
+.product-list .product .product__imgParent {
   height: fit-content;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.product-list .product .product-img {
+.product-list .product .product__img {
   width: 100%;
 }
-.product-list .product h4 {
-  font-family: var(--firstFontFam);
-  font-weight: 500;
+.product-list .product p:first-child {
+  font-weight: 300;
   margin-bottom: 0.4rem;
   font-size: 1.6rem;
   color: var(--fontColor);
 }
-.product-list .product h5 {
+.product-list .product p,
+.product-list .product p {
   font-family: var(--firstFontFam);
-  font-weight: 500;
+}
+.product-list .product p:nth-child(2) {
+  font-weight: 300;
   margin-bottom: 0.4rem;
   font-size: 1.4rem;
   color: rgb(123, 151, 147);
 }
-.product-list .product p {
-  display: none;
-  font-size: 0.9rem;
-  position: absolute;
-  bottom: 0.3rem;
-  right: 0.4rem;
-  color: var(--secondaryFontColor);
+.product-list .product .bdi,
+.product-list .product h3 {
+  font-family: var(--secondFontFam);
 }
 .product-list .product .bdi {
-  font-family: var(--secondFontFam);
   margin-bottom: 0.4rem;
   font-weight: 400;
   font-size: 1.2rem;
@@ -573,7 +554,6 @@ img.icon {
   color: rgba(123, 151, 147, 0.5);
 }
 .product-list .product h3 {
-  font-family: var(--secondFontFam);
   font-weight: 500;
   font-size: 1.6rem;
 }
@@ -596,8 +576,6 @@ img.icon {
   font-size: 1.4rem;
 }
 .product-list .product-details {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   background-color: #dbd9d9;
   padding: 0.8rem 0.4rem 1.4rem 0.4rem;
@@ -625,12 +603,7 @@ img.icon {
 /* end main box for content */
 /* Footer Section */
 .footer {
-  /* position: absolute;
-  width: 100vw;
-  bottom: 0; */
-
   padding: var(--sectionPadding);
-  display: flex;
   height: 30vh;
   background-color: #eee;
   margin: 0;
@@ -687,7 +660,6 @@ img.icon {
 }
 .introduction .heroTitle {
   align-items: center;
-  gap: 1.1rem;
   width: 100%;
   justify-content: center;
 }

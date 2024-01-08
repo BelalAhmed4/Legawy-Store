@@ -5,7 +5,7 @@ input.addEventListener("keyup", function () {
   let searchBar = document.querySelector(".search-input").value.toUpperCase();
   let productList = document.querySelector(".product-list");
   let product = document.querySelectorAll(".product");
-  let productName = document.getElementsByTagName('h4');
+  let productName = document.getElementsByTagName('p');
 
   for (let x = 0; x < productName.length; x++) {
 
