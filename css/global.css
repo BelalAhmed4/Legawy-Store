@@ -606,8 +606,9 @@ img.sideBar__icons {
 /* end main box for content */
 /* Footer Section */
 .footer {
+  padding: var(--sectionPadding);
   gap: 5%;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
   height: 30vh;
   background-color: #eee;
