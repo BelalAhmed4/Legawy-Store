@@ -607,8 +607,8 @@ img.sideBar__icons {
 /* Footer Section */
 .footer {
   gap: 5%;
+  align-items: center;
   justify-content: space-around;
-  padding: var(--sectionPadding);
   height: 30vh;
   background-color: #eee;
   margin: 0;
@@ -650,7 +650,7 @@ img.sideBar__icons {
 .footer a:hover {
   color: var(--secondaryColor);
 }
-.footer .contact .legawyImg img {
+.footer .contact .NemoImg img {
   max-width: 14rem;
 }
 /* End Footer Section  */
