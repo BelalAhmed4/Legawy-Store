@@ -1,20 +1,3 @@
-
-// for filter btns of menu
-function filterProducts(e) {
-  const products = document.querySelectorAll(".product-list .product");
-  let filter = e.target.dataset.filter;
-  if (filter === '*') {
-    products.forEach(product => product.classList.remove('hidden'));
-  } else {
-    products.forEach(product => {
-      product.classList.contains(filter) ?
-        product.classList.remove('hidden') :
-        product.classList.add('hidden');
-    });
-  };
-};
-// End for filter btns of menu
-
 // show sidebar
 function showMenu() {
   let sideBar = document.getElementById('sideBar')
@@ -71,13 +54,3 @@ let leadingImg = document.querySelectorAll('.leadingImg')
 leadingImg.forEach(element => {
   element.classList.add('leadingBand')
 })
-
-// Add To Fav
-
-
-// Change icon color when click
-// let addToFav = document.getElementById('addToFav')
-// function addToFav() {
-//   addToFav.classList.toggle(".fa-regular")
-//   addToFav.classList.toggle(".fa-solid")
-// }

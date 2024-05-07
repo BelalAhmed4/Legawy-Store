@@ -1,380 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="title" content="Nemo" />
-    <meta
-      name="description"
-      content="Discover a treasure trove of one-of-a-kind toys, offering endless joy and imagination."
-    />
-    <meta
-      name="keywords"
-      content="Lego,Toys,Babies,BestWay,Blocks,Puzzle,Mekano"
-    />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="language" content="English" />
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- End Meta -->
+  <meta name="title" content="Nemo" />
+  <meta name="description"
+    content="Discover a treasure trove of one-of-a-kind toys, offering endless joy and imagination." />
+  <meta name="keywords" content="Lego,Toys,Babies,BestWay,Blocks,Puzzle,Mekano" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="language" content="English" />
 
-    <!-- Links To Sheets -->
-    <link rel="stylesheet" href="../../css/global.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- End Links To Sheets -->
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Sniglet:wght@400;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- End Fonts -->
-    <title>Delivery And Shipment Page</title>
-  </head>
+  <!-- End Meta -->
 
-  <body>
-    <!-- ******* Start Body Absoluted Parts ******* -->
-    <!-- (1) Body Opacity Change After Clicking On Menu  -->
-    <div class="Opacity"></div>
-    <!-- (2) Side Bar -->
-    <div class="sideBar" id="sideBar">
-      <ul class="listParent">
+  <!-- Links To Sheets -->
+  <link rel="stylesheet" href="../../css/global.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- End Links To Sheets -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Sniglet:wght@400;800&display=swap"
+    rel="stylesheet" />
+  <!-- End Fonts -->
+  <title>Delivery And Shipment Page</title>
+</head>
+
+<body>
+  <!-- ******* Start Body Absoluted Parts ******* -->
+  <!-- (1) Body Opacity Change After Clicking On Menu  -->
+  <div class="Opacity"></div>
+  <!-- (2) Side Bar -->
+  <div class="sideBar" id="sideBar">
+    <ul class="listParent">
+      <li>
+        <a href="../../index.html" class="closeOnClick" onclick="filterProducts(event)" data-filter="product"><img
+            class="sideBar__icons" src="../../img/icons/home-svgrepo-com.svg" alt="" />
+          home</a>
+      </li>
+
+      <li>
+        <a href="../../sideBarList/babies/babies.html" onclick="filterProducts(event)" data-filter="babies"><img
+            class="sideBar__icons" src="../../img/icons/baby-stroller-svgrepo-com.svg" alt="" />
+          Babies</a>
+      </li>
+
+      <li>
+        <a href="../../sideBarList/birthDay&gifts/BD&G.html" onclick="filterProducts(event)" data-filter="babies"><img
+            class="sideBar__icons" src="../../img/icons/gift-svgrepo-com.svg" alt="" />
+          Birth Day & Gifts</a>
+      </li>
+
+      <li class="toys-category">
+        <a class="showToys" onclick="showSubList()"><img class="sideBar__icons"
+            src="../../img/icons/joystick-gamepad-svgrepo-com.svg" alt="" />Toys<span class="flex-row"><ion-icon
+              class="down-chevron" name="chevron-down-outline"></ion-icon></span></a>
+
+        <ul class="toysList subList">
+          <li>
+            <a href="../../sideBarList/toys/boys/boys.html" onclick="filterProducts(event)" data-filter="boys"><img
+                class="sideBar__icons" src="../../img/icons/boy-svgrepo-com.svg" alt="" />Boys</a>
+          </li>
+          <li>
+            <a href="../../sideBarList/toys/girls/girls.html" onclick="filterProducts(event)" data-filter="girls"><img
+                class="sideBar__icons" src="../../img/icons/girl-svgrepo-com.svg" alt="" />
+              Girls</a>
+          </li>
+          <li>
+            <a href="../../sideBarList/toys/family/family.html" onclick="filterProducts(event)"
+              data-filter="family"><img class="sideBar__icons"
+                src="../../img/icons/family-3-generations-svgrepo-com.svg" alt="" />
+              Family</a>
+          </li>
+        </ul>
+      </li>
+
+      <li onclick="filterProducts(event)" data-filter="sea-stuff">
+        <a href="../../sideBarList/seaStuff/seaStuff.html" onclick="filterProducts(event)" data-filter="sea-stuff"><img
+            class="sideBar__icons" src="../../img/icons/beachumbrella-svgrepo-com.svg" alt="" />
+          Sea Stuff</a>
+      </li>
+
+      <li class="educational-category">
+        <a class="showEducation" onclick="showSubList2()" data-filter="educational"><img class="sideBar__icons"
+            src="../../img/icons/brainIcon.svg" alt="" />
+          Educational<span class="flex-row"><ion-icon class="down-chevron"
+              name="chevron-down-outline"></ion-icon></span></a>
+
+        <ul class="educationList subList">
+          <li>
+            <a href="../../sideBarList/educational/lego/lego.html" onclick="filterProducts(event)" data-filter="lego">
+              <img class="sideBar__icons" src="../../img/icons/lego-2-svgrepo-com.svg" alt="" />
+              Lego</a>
+          </li>
+          <li>
+            <a href="../../sideBarList/educational/puzzle/puzzle.html" onclick="filterProducts(event)"
+              data-filter="puzzle"><img class="sideBar__icons" src="../../img/icons/puzzle-svgrepo-com.svg" alt="" />
+              Puzzle</a>
+          </li>
+          <li>
+            <a href="../../sideBarList/educational/makano/mekano.html" onclick="filterProducts(event)"
+              data-filter="mekano"><img class="sideBar__icons" src="../../img/icons/hammer-wrench-svgrepo-com.svg"
+                alt="" />
+              Mekano</a>
+          </li>
+          <li>
+            <a href="../../sideBarList/educational/other/other.html" onclick="filterProducts(event)"
+              data-filter="other">Other</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!-- (3) header -->
+  <header>
+    <div class="header main-container flex-row">
+      <div class="userSpace gap-08 flex-row">
+        <div class="favourites iconHolder">
+          <p class="product_name">0</p>
+
+          <a href="../../userSpace/liked-P/liked-P.html">
+            <ion-icon class="headerIcon" name="heart-outline"></ion-icon>
+          </a>
+        </div>
+        <div class="cart iconHolder">
+          <p class="product_name">0</p>
+          <a href="../../userSpace/cart/cart.html"><ion-icon class="headerIcon" name="bag-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <a href="../../index.html"><img class="logo-img" src="../../img/nemoLogo.png" alt="Logo" /></a>
+      <div class="menu-box flex-row gap-08">
+        <h3>Menu</h3>
+        <i class="headerIcon fa-solid fa-bars" onclick="showMenu()"></i>
+      </div>
+    </div>
+  </header>
+  <!-- end header -->
+  <!-- (4) Start contact boxes -->
+  <div class="social-media flex-column">
+    <a href="" class="contact-box flex-row facebook"><img src="../../img/icons/facebook-color-svgrepo-com.svg"
+        alt="" /></a>
+    <a href="" class="contact-box flex-row telegram"><img src="../../img/icons/telegram-svgrepo-com.svg" alt="" /></a>
+    <a href="" class="contact-box flex-row whatsapp"><img src="../../img/icons/whatsapp-svgrepo-com.svg" alt="" /></a>
+    <a href="" class="contact-box flex-row instagram"><img src="../../img/icons/instagram-svgrepo-com.svg" alt="" /></a>
+  </div>
+  <!-- End contact boxes -->
+  <!-- ******* End Absoluted Parts ******* -->
+
+  <!-- (1) Start Title & Announcements Part -->
+  <section class="announcements main-container full-width-section">
+    <div class="introduction flex-column">
+      <div class="heroTitle gap-102 titleBox flex-row">
+        <div class="verticalLine"></div>
+        <div class="centerParent flex-column">
+          <div class="mainTitle flex-column">
+            <h2 class="titleBox__text">Delivery & Shipment</h2>
+            <!-- <h3>SECTION</h3> -->
+          </div>
+          <div class="subTitle"></div>
+        </div>
+
+        <div class="verticalLine"></div>
+      </div>
+    </div>
+  </section>
+  <!-- end Title & Announcements Part-->
+
+  <!-- (2) Start Main  -->
+  <section class="main-content main-container main-box">
+    <div class="content flex-column gap-102">
+      <h2>- We deliver to all areas across Egypt.</h2>
+      <p>
+        After successfully placing your order, our customer service will
+        conduct a verification process by call/WhatsApp, then you can expect
+        to receive your order within 3 to 5 business days.
+      </p>
+
+      <h3>- Shipment Fees</h3>
+
+      <p>
+        Our shipment fees vary from a province to another, therefore please
+        check the shipping fees before confirming your order.
+      </p>
+
+      <h3>- Delivery Options</h3>
+      <ul class="flex-column">
         <li>
-          <a
-            href="../../index.html"
-            class="closeOnClick"
-            onclick="filterProducts(event)"
-            data-filter="product"
-            ><img
-              class="sideBar__icons"
-              src="../../img/icons/home-svgrepo-com.svg"
-              alt=""
-            />
-            home</a
-          >
+          <h4>Home Delivery</h4>
+          <p>
+            Orders are shipped Saturday to Thursday every week of the year.
+          </p>
         </li>
-
         <li>
-          <a
-            href="../../sideBarList/babies/babies.html"
-            onclick="filterProducts(event)"
-            data-filter="babies"
-            ><img
-              class="sideBar__icons"
-              src="../../img/icons/baby-stroller-svgrepo-com.svg"
-              alt=""
-            />
-            Babies</a
-          >
-        </li>
-
-        <li>
-          <a
-            href="../../sideBarList/birthDay&gifts/BD&G.html"
-            onclick="filterProducts(event)"
-            data-filter="babies"
-            ><img
-              class="sideBar__icons"
-              src="../../img/icons/gift-svgrepo-com.svg"
-              alt=""
-            />
-            Birth Day & Gifts</a
-          >
-        </li>
-
-        <li class="toys-category">
-          <a class="showToys" onclick="showSubList()"
-            ><img
-              class="sideBar__icons"
-              src="../../img/icons/joystick-gamepad-svgrepo-com.svg"
-              alt="" />Toys<span class="flex-row"
-              ><ion-icon
-                class="down-chevron"
-                name="chevron-down-outline"
-              ></ion-icon></span
-          ></a>
-
-          <ul class="toysList subList">
-            <li>
-              <a
-                href="../../sideBarList/toys/boys/boys.html"
-                onclick="filterProducts(event)"
-                data-filter="boys"
-                ><img
-                  class="sideBar__icons"
-                  src="../../img/icons/boy-svgrepo-com.svg"
-                  alt=""
-                />Boys</a
-              >
-            </li>
-            <li>
-              <a
-                href="../../sideBarList/toys/girls/girls.html"
-                onclick="filterProducts(event)"
-                data-filter="girls"
-                ><img
-                  class="sideBar__icons"
-                  src="../../img/icons/girl-svgrepo-com.svg"
-                  alt=""
-                />
-                Girls</a
-              >
-            </li>
-            <li>
-              <a
-                href="../../sideBarList/toys/family/family.html"
-                onclick="filterProducts(event)"
-                data-filter="family"
-                ><img
-                  class="sideBar__icons"
-                  src="../../img/icons/family-3-generations-svgrepo-com.svg"
-                  alt=""
-                />
-                Family</a
-              >
-            </li>
-          </ul>
-        </li>
-
-        <li onclick="filterProducts(event)" data-filter="sea-stuff">
-          <a
-            href="../../sideBarList/seaStuff/seaStuff.html"
-            onclick="filterProducts(event)"
-            data-filter="sea-stuff"
-            ><img
-              class="sideBar__icons"
-              src="../../img/icons/beachumbrella-svgrepo-com.svg"
-              alt=""
-            />
-            Sea Stuff</a
-          >
-        </li>
-
-        <li class="educational-category">
-          <a
-            class="showEducation"
-            onclick="showSubList2()"
-            data-filter="educational"
-            ><img
-              class="sideBar__icons"
-              src="../../img/icons/brainIcon.svg"
-              alt="" />
-            Educational<span class="flex-row"
-              ><ion-icon
-                class="down-chevron"
-                name="chevron-down-outline"
-              ></ion-icon></span
-          ></a>
-
-          <ul class="educationList subList">
-            <li>
-              <a
-                href="../../sideBarList/educational/lego/lego.html"
-                onclick="filterProducts(event)"
-                data-filter="lego"
-              >
-                <img
-                  class="sideBar__icons"
-                  src="../../img/icons/lego-2-svgrepo-com.svg"
-                  alt=""
-                />
-                Lego</a
-              >
-            </li>
-            <li>
-              <a
-                href="../../sideBarList/educational/puzzle/puzzle.html"
-                onclick="filterProducts(event)"
-                data-filter="puzzle"
-                ><img
-                  class="sideBar__icons"
-                  src="../../img/icons/puzzle-svgrepo-com.svg"
-                  alt=""
-                />
-                Puzzle</a
-              >
-            </li>
-            <li>
-              <a
-                href="../../sideBarList/educational/makano/mekano.html"
-                onclick="filterProducts(event)"
-                data-filter="mekano"
-                ><img
-                  class="sideBar__icons"
-                  src="../../img/icons/hammer-wrench-svgrepo-com.svg"
-                  alt=""
-                />
-                Mekano</a
-              >
-            </li>
-            <li>
-              <a
-                href="../../sideBarList/educational/other/other.html"
-                onclick="filterProducts(event)"
-                data-filter="other"
-                >Other</a
-              >
-            </li>
-          </ul>
+          <h4>Click & Collect</h4>
+          <p>
+            After placing your order, you’ll receive a confirmation
+            call/Whatsapp message with order number. Please wait for an email
+            and/or call from us telling you when it’s ready to collect.
+          </p>
+          <p>We keep your order in store for 7 business days.</p>
+          <p>
+            If you encounter any issues with the product, such as breakage or
+            defects, please don't hesitate to contact us. We will gladly
+            facilitate the return process, ensuring you receive a full refund
+            promptly.
+          </p>
         </li>
       </ul>
     </div>
-    <!-- (3) header -->
-    <header>
-      <div class="header main-container flex-row">
-        <div class="userSpace gap-08 flex-row">
-          <div class="favourites iconHolder">
-            <p>0</p>
+  </section>
+  <!-- End Main -->
 
-            <a href="../../userSpace/liked-P/liked-P.html">
-              <ion-icon class="headerIcon" name="heart-outline"></ion-icon>
-            </a>
-          </div>
-          <div class="cart iconHolder">
-            <p>0</p>
-            <a href="../../userSpace/cart/cart.html"
-              ><ion-icon class="headerIcon" name="bag-outline"></ion-icon>
-            </a>
-          </div>
-        </div>
-        <a href="../../index.html"
-          ><img class="logo-img" src="../../img/nemoLogo.png" alt="Logo"
-        /></a>
-        <div class="menu-box flex-row gap-08">
-          <h3>Menu</h3>
-          <i class="headerIcon fa-solid fa-bars" onclick="showMenu()"></i>
-        </div>
+  <!-- Start footer flex-row  Section -->
+  <section class="footer flex-row">
+    <div class="contact flex-row Box flex-column">
+      <div class="NemoImg">
+        <img src="../../img/nemoLogo.png" alt="" />
       </div>
-    </header>
-    <!-- end header -->
-    <!-- (4) Start contact boxes -->
-    <div class="social-media flex-column">
-      <a href="" class="contact-box flex-row facebook"
-        ><img src="../../img/icons/facebook-color-svgrepo-com.svg" alt=""
-      /></a>
-      <a href="" class="contact-box flex-row telegram"
-        ><img src="../../img/icons/telegram-svgrepo-com.svg" alt=""
-      /></a>
-      <a href="" class="contact-box flex-row whatsapp"
-        ><img src="../../img/icons/whatsapp-svgrepo-com.svg" alt=""
-      /></a>
-      <a href="" class="contact-box flex-row instagram"
-        ><img src="../../img/icons/instagram-svgrepo-com.svg" alt=""
-      /></a>
     </div>
-    <!-- End contact boxes -->
-    <!-- ******* End Absoluted Parts ******* -->
 
-    <!-- (1) Start Title & Announcements Part -->
-    <section class="announcements main-container full-width-section">
-      <div class="introduction flex-column">
-        <div class="heroTitle gap-102 titleBox flex-row">
-          <div class="verticalLine"></div>
-          <div class="centerParent flex-column">
-            <div class="mainTitle flex-column">
-              <h2 class="titleBox__text">Delivery & Shipment</h2>
-              <!-- <h3>SECTION</h3> -->
-            </div>
-            <div class="subTitle"></div>
-          </div>
+    <div class="discover gap-102 flex-row Box flex-column">
+      <h2>Discover</h2>
 
-          <div class="verticalLine"></div>
-        </div>
+      <div class="location_delivery">
+        <a href="">Our Location</a>
+        <a href="../delivery&shipment/D&S.html">Delivery & Shipment</a>
+        <a href="../../footer/customersReviews/CR.html">Customers Reviews</a>
       </div>
-    </section>
-    <!-- end Title & Announcements Part-->
+    </div>
 
-    <!-- (2) Start Main  -->
-    <section class="main-content main-container main-box">
-      <div class="content flex-column gap-102">
-        <h2>- We deliver to all areas across Egypt.</h2>
-        <p>
-          After successfully placing your order, our customer service will
-          conduct a verification process by call/WhatsApp, then you can expect
-          to receive your order within 3 to 5 business days.
-        </p>
-
-        <h3>- Shipment Fees</h3>
-
-        <p>
-          Our shipment fees vary from a province to another, therefore please
-          check the shipping fees before confirming your order.
-        </p>
-
-        <h3>- Delivery Options</h3>
-        <ul class="flex-column">
-          <li>
-            <h4>Home Delivery</h4>
-            <p>
-              Orders are shipped Saturday to Thursday every week of the year.
-            </p>
-          </li>
-          <li>
-            <h4>Click & Collect</h4>
-            <p>
-              After placing your order, you’ll receive a confirmation
-              call/Whatsapp message with order number. Please wait for an email
-              and/or call from us telling you when it’s ready to collect.
-            </p>
-            <p>We keep your order in store for 7 business days.</p>
-            <p>
-              If you encounter any issues with the product, such as breakage or
-              defects, please don't hesitate to contact us. We will gladly
-              facilitate the return process, ensuring you receive a full refund
-              promptly.
-            </p>
-          </li>
-        </ul>
+    <div class="aboutUs gap-102 flex-row Box flex-column">
+      <h2>About Us</h2>
+      <div class="contact_aboutUs">
+        <!-- <a>Contact Us</a> -->
+        <a href="../aboutUs/aboutUs.html">About Us</a>
       </div>
-    </section>
-    <!-- End Main -->
+    </div>
+  </section>
+  <!-- End footer flex-row  Section -->
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="../../js/script.js"></script>
+<script src="../js/script.js"></script>
 
-    <!-- Start footer flex-row  Section -->
-    <section class="footer flex-row">
-      <div class="contact flex-row Box flex-column">
-        <div class="NemoImg">
-          <img src="../../img/nemoLogo.png" alt="" />
-        </div>
-      </div>
-
-      <div class="discover gap-102 flex-row Box flex-column">
-        <h2>Discover</h2>
-
-        <div class="location_delivery">
-          <a href="">Our Location</a>
-          <a href="../delivery&shipment/D&S.html">Delivery & Shipment</a>
-          <a href="../../footer/customersReviews/CR.html">Customers Reviews</a>
-        </div>
-      </div>
-
-      <div class="aboutUs gap-102 flex-row Box flex-column">
-        <h2>About Us</h2>
-        <div class="contact_aboutUs">
-          <!-- <a>Contact Us</a> -->
-          <a href="../aboutUs/aboutUs.html">About Us</a>
-        </div>
-      </div>
-    </section>
-    <!-- End footer flex-row  Section -->
-  </body>
-  <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  ></script>
-  <script src="../../js/script.js"></script>
-  <script src="../js/script.js"></script>
 </html>

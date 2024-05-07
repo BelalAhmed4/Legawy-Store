@@ -194,7 +194,7 @@ header {
   background-color: #f0f0f0;
 }
 .header .logo-img {
-  width: 9rem;
+  width: 10rem;
 }
 .sideBar .logo-img {
   padding: 1rem;
@@ -211,7 +211,6 @@ header {
   margin-right: 1.2rem;
 }
 .header .menu-box h3 {
-  font-family: var(--firstFontFam);
   font-family: var(--firstFontFam);
   font-size: 1.6rem;
   font-weight: 500;
@@ -536,11 +535,11 @@ img.sideBar__icons {
   color: var(--fontColor);
 }
 .product-list .product p,
-.product-list .product p {
+.product-list .product .product_price {
   font-family: var(--firstFontFam);
 }
-.product-list .product p:nth-child(2) {
-  font-weight: 300;
+.product-list .product .product_price {
+  font-weight: 400;
   margin-bottom: 0.4rem;
   font-size: 1.4rem;
   color: rgb(123, 151, 147);

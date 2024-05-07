@@ -3,9 +3,8 @@ var input = document.getElementById('search-input');
 
 input.addEventListener("keyup", function () {
   let searchBar = document.querySelector(".search-input").value.toUpperCase();
-  let productList = document.querySelector(".product-list");
   let product = document.querySelectorAll(".product");
-  let productName = document.getElementsByTagName('p');
+  let productName = document.querySelectorAll('.product_name');
 
   for (let x = 0; x < productName.length; x++) {
 
