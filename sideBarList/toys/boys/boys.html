@@ -1,816 +1,1030 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- Meta -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Nemo" />
+    <meta
+      name="description"
+      content="Discover a treasure trove of one-of-a-kind toys, offering endless joy and imagination."
+    />
+    <meta
+      name="keywords"
+      content="Lego,Toys,Babies,BestWay,Blocks,Puzzle,Mekano"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="language" content="English" />
 
-  <meta name="title" content="Nemo">
-  <meta name="description"
-    content="Discover a treasure trove of one-of-a-kind toys, offering endless joy and imagination.">
-  <meta name="keywords" content="Lego,Toys,Babies,BestWay,Blocks,Puzzle,Mekano">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="language" content="English">
+    <!-- End Meta -->
 
-  <!-- End Meta -->
+    <!-- Links To Sheets -->
+    <link rel="stylesheet" href="../../../css/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- End Links To Sheets -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Sniglet:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Fonts -->
+    <title>Boys Page</title>
+  </head>
 
+  <body>
+    <!-- ******* Start Body Absoluted Parts ******* -->
+    <!-- (1) Body Opacity Change After Clicking On Menu  -->
+    <div class="Opacity"></div>
+    <!-- (2) Side Bar -->
+    <div class="sideBar" id="sideBar">
+      <ul class="listParent">
+        <li>
+          <a
+            href="../../../index.html"
+            class="closeOnClick"
+            onclick="filterProducts(event)"
+            data-filter="product"
+            ><img
+              class="sideBar__icons"
+              src="../../../img/icons/home-svgrepo-com.svg"
+              alt=""
+            />
+            home</a
+          >
+        </li>
 
-  <!-- Links To Sheets -->
-  <link rel="stylesheet" href="../../../css/global.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer">
-  <!-- End Links To Sheets -->
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Sniglet:wght@400;800&display=swap"
-    rel="stylesheet">
-  <!-- End Fonts -->
-  <title>Boys Page</title>
-</head>
+        <li>
+          <a
+            href="../../../sideBarList/babies/babies.html"
+            onclick="filterProducts(event)"
+            data-filter="babies"
+            ><img
+              class="sideBar__icons"
+              src="../../../img/icons/baby-stroller-svgrepo-com.svg"
+              alt=""
+            />
+            Babies</a
+          >
+        </li>
 
-<body>
-  <!-- ******* Start Body Absoluted Parts ******* -->
-  <!-- (1) Body Opacity Change After Clicking On Menu  -->
-  <div class="Opacity"></div>
-  <!-- (2) Side Bar -->
-  <div class="sideBar" id="sideBar">
-    <ul class="listParent">
+        <li>
+          <a
+            href="../../../sideBarList/birthDay&gifts/BD&G.html"
+            onclick="filterProducts(event)"
+            data-filter="babies"
+            ><img
+              class="sideBar__icons"
+              src="../../../img/icons/gift-svgrepo-com.svg"
+              alt=""
+            />
+            Birth Day & Gifts</a
+          >
+        </li>
 
-      <li>
-        <a href="../../../index.html" class="closeOnClick" onclick=filterProducts(event) data-filter="product"><img
-            class="sideBar__icons" src="../../../img/icons/home-svgrepo-com.svg" alt="">
-          home</a>
-      </li>
+        <li class="toys-category">
+          <a class="showToys selected" onclick="showSubList()"
+            ><img
+              class="sideBar__icons"
+              src="../../../img/icons/joystick-gamepad-svgrepo-com.svg"
+              alt="" />Toys<span class="flex-row"
+              ><ion-icon
+                class="down-chevron"
+                name="chevron-down-outline"
+              ></ion-icon></span
+          ></a>
 
+          <ul class="toysList subList">
+            <li>
+              <a
+                href="../../../sideBarList/toys/boys/boys.html"
+                class="selected"
+                onclick="filterProducts(event)"
+                data-filter="boys"
+                ><img
+                  class="sideBar__icons"
+                  src="../../../img/icons/boy-svgrepo-com.svg"
+                  alt=""
+                />Boys</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../../sideBarList/toys/girls/girls.html"
+                onclick="filterProducts(event)"
+                data-filter="girls"
+                ><img
+                  class="sideBar__icons"
+                  src="../../../img/icons/girl-svgrepo-com.svg"
+                  alt=""
+                />
+                Girls</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../../sideBarList/toys/family/family.html"
+                onclick="filterProducts(event)"
+                data-filter="family"
+                ><img
+                  class="sideBar__icons"
+                  src="../../../img/icons/family-3-generations-svgrepo-com.svg"
+                  alt=""
+                />
+                Family</a
+              >
+            </li>
+          </ul>
+        </li>
 
-      <li>
-        <a href="../../../sideBarList/babies/babies.html" onclick=filterProducts(event) data-filter="babies"><img
-            class="sideBar__icons" src="../../../img/icons/baby-stroller-svgrepo-com.svg" alt="">
-          Babies</a>
-      </li>
+        <li onclick="filterProducts(event)" data-filter="sea-stuff">
+          <a
+            href="../../../sideBarList/seaStuff/seaStuff.html"
+            onclick="filterProducts(event)"
+            data-filter="sea-stuff"
+            ><img
+              class="sideBar__icons"
+              src="../../../img/icons/beachumbrella-svgrepo-com.svg"
+              alt=""
+            />
+            Sea Stuff</a
+          >
+        </li>
 
-      <li>
-        <a href="../../../sideBarList/birthDay&gifts/BD&G.html" onclick=filterProducts(event) data-filter="babies"><img
-            class="sideBar__icons" src="../../../img/icons/gift-svgrepo-com.svg" alt="">
-          Birth Day & Gifts</a>
-      </li>
+        <li class="educational-category">
+          <a
+            class="showEducation"
+            onclick="showSubList2()"
+            data-filter="educational"
+            ><img
+              class="sideBar__icons"
+              src="../../../img/icons/brainIcon.svg"
+              alt="" />
+            Educational<span class="flex-row"
+              ><ion-icon
+                class="down-chevron"
+                name="chevron-down-outline"
+              ></ion-icon></span
+          ></a>
 
-      <li class="toys-category">
-
-        <a class="showToys selected" onclick="showSubList()"><img class="sideBar__icons"
-            src="../../../img/icons/joystick-gamepad-svgrepo-com.svg" alt="">Toys<span class="flex-row"><ion-icon
-              class="down-chevron" name="chevron-down-outline"></ion-icon></span></a>
-
-        <ul class="toysList  subList">
-          <li><a href="../../../sideBarList/toys/boys/boys.html" class="selected" onclick=filterProducts(event)
-              data-filter="boys"><img class="sideBar__icons" src="../../../img/icons/boy-svgrepo-com.svg"
-                alt="">Boys</a></li>
-          <li><a href="../../../sideBarList/toys/girls/girls.html" onclick=filterProducts(event)
-              data-filter="girls"><img class="sideBar__icons" src="../../../img/icons/girl-svgrepo-com.svg" alt="">
-              Girls</a>
-          </li>
-          <li><a href="../../../sideBarList/toys/family/family.html" onclick=filterProducts(event)
-              data-filter="family"><img class="sideBar__icons"
-                src="../../../img/icons/family-3-generations-svgrepo-com.svg" alt=""> Family</a>
-          </li>
-        </ul>
-
-      </li>
-
-      <li onclick=filterProducts(event) data-filter="sea-stuff"><a href="../../../sideBarList/seaStuff/seaStuff.html"
-          onclick=filterProducts(event) data-filter="sea-stuff"><img class="sideBar__icons"
-            src="../../../img/icons/beachumbrella-svgrepo-com.svg" alt=""> Sea
-          Stuff</a>
-      </li>
-
-      <li class="educational-category">
-        <a class="showEducation" onclick="showSubList2()" data-filter="educational"><img class="sideBar__icons"
-            src="../../../img/icons/brainIcon.svg" alt="">
-          Educational<span class="flex-row"><ion-icon class="down-chevron"
-              name="chevron-down-outline"></ion-icon></span></a>
-
-        <ul class="educationList subList">
-          <li>
-            <a href="../../../sideBarList/educational/lego/lego.html" onclick=filterProducts(event) data-filter="lego">
-              <img class="sideBar__icons" src="../../../img/icons/lego-2-svgrepo-com.svg" alt="">
-              Lego</a>
-          </li>
-          <li>
-            <a href="../../../sideBarList/educational/puzzle/puzzle.html" onclick=filterProducts(event)
-              data-filter="puzzle"><img class="sideBar__icons" src="../../../img/icons/puzzle-svgrepo-com.svg" alt="">
-              Puzzle</a>
-          </li>
-          <li>
-            <a href="../../../sideBarList/educational/makano/mekano.html" onclick=filterProducts(event)
-              data-filter="mekano"><img class="sideBar__icons" src="../../../img/icons/hammer-wrench-svgrepo-com.svg"
-                alt="">
-              Mekano</a>
-          </li>
-          <li>
-            <a href="../../../sideBarList/educational/other/other.html" onclick=filterProducts(event)
-              data-filter="other">Other</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-  <!-- (3) header -->
-  <header>
-    <div class="header main-container flex-row">
-      <div class="userSpace gap-08 flex-row">
-        <div class="favourites iconHolder">
-          <p class="product_name">0</p>
-
-          <a href="../../../userSpace/liked-P/liked-P.html">
-            <ion-icon class="headerIcon" name="heart-outline"></ion-icon>
-          </a>
-        </div>
-        <div class="cart iconHolder">
-          <p class="product_name">0</p>
-          <a href="../../../userSpace/cart/cart.html"><ion-icon class="headerIcon" name="bag-outline"></ion-icon>
-          </a>
-        </div>
-      </div>
-      <a href="../../../index.html"><img class="logo-img" src="../../../img/nemoLogo.png" alt="Logo"></a>
-      <div class="menu-box flex-row gap-08">
-        <h3>Menu</h3>
-        <i class="headerIcon fa-solid fa-bars" onclick="showMenu()"></i>
-      </div>
+          <ul class="educationList subList">
+            <li>
+              <a
+                href="../../../sideBarList/educational/lego/lego.html"
+                onclick="filterProducts(event)"
+                data-filter="lego"
+              >
+                <img
+                  class="sideBar__icons"
+                  src="../../../img/icons/lego-2-svgrepo-com.svg"
+                  alt=""
+                />
+                Lego</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../../sideBarList/educational/puzzle/puzzle.html"
+                onclick="filterProducts(event)"
+                data-filter="puzzle"
+                ><img
+                  class="sideBar__icons"
+                  src="../../../img/icons/puzzle-svgrepo-com.svg"
+                  alt=""
+                />
+                Puzzle</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../../sideBarList/educational/makano/mekano.html"
+                onclick="filterProducts(event)"
+                data-filter="mekano"
+                ><img
+                  class="sideBar__icons"
+                  src="../../../img/icons/hammer-wrench-svgrepo-com.svg"
+                  alt=""
+                />
+                Mekano</a
+              >
+            </li>
+            <li>
+              <a
+                href="../../../sideBarList/educational/other/other.html"
+                onclick="filterProducts(event)"
+                data-filter="other"
+                >Other</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </header>
-  <!-- end header -->
-  <!-- (4) Start contact boxes -->
-  <div class="social-media flex-column">
+    <!-- (3) header -->
+    <header>
+      <div class="header main-container flex-row">
+        <div class="userSpace gap-08 flex-row">
+          <div class="favourites iconHolder">
+            <p class="product_name">0</p>
 
-    <a href="" class="contact-box flex-row facebook"><img src="../../../img/icons/facebook-color-svgrepo-com.svg"
-        alt=""></a>
-    <a href="" class="contact-box flex-row telegram"><img src="../../../img/icons/telegram-svgrepo-com.svg" alt=""></a>
-    <a href="" class="contact-box flex-row whatsapp"><img src="../../../img/icons/whatsapp-svgrepo-com.svg" alt=""></a>
-    <a href="" class="contact-box flex-row instagram"><img src="../../../img/icons/instagram-svgrepo-com.svg"
-        alt=""></a>
-  </div>
-  <!-- End contact boxes -->
-  <!-- ******* End Absoluted Parts ******* -->
-
-
-
-
-
-
-
-
-
-
-  <!-- (1) Start Title & Announcements Part -->
-  <section class="announcements main-container full-width-section">
-
-    <div class="introduction flex-column">
-      <div class="heroTitle gap-102 titleBox flex-row">
-        <div class="verticalLine"></div>
-        <div class="centerParent flex-column">
-          <div class="mainTitle flex-column">
-            <h2 class="titleBox__text">Boys</h2>
-            <h3>SECTION</h3>
-
+            <a href="../../../userSpace/liked-P/liked-P.html">
+              <ion-icon class="headerIcon" name="heart-outline"></ion-icon>
+            </a>
           </div>
-          <div class="subTitle">
+          <div class="cart iconHolder">
+            <p class="product_name">0</p>
+            <a href="../../../userSpace/cart/cart.html"
+              ><ion-icon class="headerIcon" name="bag-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <a href="../../../index.html"
+          ><img class="logo-img" src="../../../img/nemoLogo.png" alt="Logo"
+        /></a>
+        <div class="menu-box flex-row gap-08">
+          <h3>Menu</h3>
+          <i class="headerIcon fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- (4) Start contact boxes -->
+    <div class="social-media flex-column">
+      <a href="" class="contact-box flex-row facebook"
+        ><img src="../../../img/icons/facebook-color-svgrepo-com.svg" alt=""
+      /></a>
+      <a href="" class="contact-box flex-row telegram"
+        ><img src="../../../img/icons/telegram-svgrepo-com.svg" alt=""
+      /></a>
+      <a href="" class="contact-box flex-row whatsapp"
+        ><img src="../../../img/icons/whatsapp-svgrepo-com.svg" alt=""
+      /></a>
+      <a href="" class="contact-box flex-row instagram"
+        ><img src="../../../img/icons/instagram-svgrepo-com.svg" alt=""
+      /></a>
+    </div>
+    <!-- End contact boxes -->
+    <!-- ******* End Absoluted Parts ******* -->
+    <!-- (1) Start Title & Announcements Part -->
+    <section class="announcements main-container full-width-section">
+      <div class="introduction flex-column">
+        <div class="heroTitle gap-102 titleBox flex-row">
+          <div class="verticalLine"></div>
+          <div class="centerParent flex-column">
+            <div class="mainTitle flex-column">
+              <h2 class="titleBox__text">Boys</h2>
+              <h3>SECTION</h3>
+            </div>
+          </div>
+
+          <div class="verticalLine"></div>
+        </div>
+      </div>
+    </section>
+    <!-- end Title & Announcements Part-->
+
+    <!-- (2) Start Main  -->
+    <section class="main-content main-container">
+      <div class="main-box flex-column gap-102">
+        <div class="search-box flex-row">
+          <input
+            placeholder="Looking For ?"
+            type="text"
+            class="search-input"
+            id="search-input"
+          />
+          <div class="search-icon-box">
+            <img
+              src="../../../img/icons/search-icon.svg"
+              class="search-icon"
+              alt=""
+            />
           </div>
         </div>
 
-        <div class="verticalLine"></div>
+        <div class="product-list main-container">
+          <!-- **************************** -->
+          <div class="product flex-column boys girls">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
 
-
-      </div>
-
-
-
-
-    </div>
-
-
-  </section>
-  <!-- end Title & Announcements Part-->
-
-
-  <!-- (2) Start Main  -->
-  <section class="main-content main-container">
-    <div class="main-box flex-column gap-102">
-
-
-      <div class="search-box flex-row">
-        <input placeholder="Looking For ?" type="text" class="search-input" id="search-input">
-        <div class="search-icon-box"><img src="../../../img/icons/search-icon.svg" class="search-icon" alt=""></div>
-      </div>
-
-
-      <div class="product-list main-container">
-        <!-- **************************** -->
-        <div class="product flex-column boys girls">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/B&G/colorful_bubble-removebg-preview.png"
+                class="product__img"
+                alt=""
+              />
             </div>
 
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/B&G/colorful_bubble-removebg-preview.png" class="product__img" alt="">
-          </div>
-
-          <div class="product-details flex-column flex-column">
-            <h4>Bubbles
-              </p>
+            <div class="product-details flex-column flex-column">
+              <p class="product_name">Product Name</p>
               <div class="product_price">Price</div>
               <!-- <h3 class="bdi">35 EGP</h3> -->
               <div class="atc">
-                <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- **************************** -->
+          <div class="product flex-column boys girls">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
               </div>
 
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/B&G/slaim-removebg-preview.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
           </div>
+          <!-- **************************** -->
+          <div class="product flex-column boys girls">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/B&G/money_saver-removebg-preview.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- **************************** -->
+
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/AvengersCharacters.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- **************************** -->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/DrawnPlan.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- **************************** -->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/F22Plan.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- **************************** -->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/MetalSmallCars.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- **************************** -->
+          <div class="product flex-column boys girls">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/B&G/BublesSpaceGun.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- **************************** -->
+          <div class="product flex-column boys girls">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/B&G/FishingPlate.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- **************************** -->
+          <div class="product flex-column boys girls">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/B&G/CityRampRacer.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys girls">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/B&G/DoctorBag.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/Bee.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/CaptainAmericaCar.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/HulkRemoteCar.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/IronManRemoteCar.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/SpiderManRemoteCar.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/fixingTools.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/SmallRaceCars.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/Sound&LightGun.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/Tank+Remote.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
+          <div class="product flex-column boys">
+            <div class="added">
+              <div class="addToWishList">
+                <i
+                  class="fa-regular fa-heart fa-2xl"
+                  style="color: #c7c9cc"
+                ></i>
+              </div>
+
+              <div class="added"></div>
+              <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc"></i>
+            </div>
+            <div class="product__imgParent flex-column">
+              <img
+                loading="lazy"
+                src="../../../img/Products/Toys/Boys/SmallAvengersCharacters.png"
+                class="product__img"
+                alt=""
+              />
+            </div>
+
+            <div class="product-details flex-column">
+              <p class="product_name">Product Name</p>
+              <div class="product_price">Price</div>
+              <div class="atc">
+                <button class="atc__btn flex-row gap-08">
+                  Add To Cart <ion-icon name="cart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--*********************************-->
         </div>
-        <!-- **************************** -->
-        <div class="product flex-column boys girls">
-          <div class="added">
+      </div>
+    </section>
+    <!-- End Main -->
 
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/B&G/slaim-removebg-preview.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-          </div>
+    <!-- Start footer flex-row  Section -->
+    <section class="footer flex-row">
+      <div class="contact flex-row Box flex-column">
+        <div class="NemoImg">
+          <img src="../../../img/nemoLogo.png" alt="" />
         </div>
-        <!-- **************************** -->
-        <div class="product flex-column boys girls">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column">
-            <img loading="lazy" src="../../../img/Products/Toys/B&G/money_saver-removebg-preview.png"
-              class="product__img" alt="">
-          </div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/AvengersCharacters.png" class="product__img" alt=""></div>
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/DrawnPlan.png" class="product__img" alt=""></div>
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/F22Plan.png" class="product__img" alt=""></div>
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/MetalSmallCars.png" class="product__img" alt=""></div>
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div class="product flex-column boys girls">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/B&G/BublesSpaceGun.png" class="product__img" alt=""></div>
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div class="product flex-column boys girls">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/B&G/FishingPlate.png" class="product__img" alt=""></div>
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-          </div>
-        </div>
-        <!-- **************************** -->
-        <div class="product flex-column boys girls">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/B&G/CityRampRacer.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys girls">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/B&G/DoctorBag.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy" src="../../../img/Products/Toys/Boys/Bee.png"
-              class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/CaptainAmericaCar.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/HulkRemoteCar.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/IronManRemoteCar.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/SpiderManRemoteCar.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/fixingTools.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/SmallRaceCars.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/Sound&LightGun.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/Tank+Remote.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-        <div class="product flex-column boys">
-          <div class="added">
-
-            <div class="addToWishList">
-              <i class="fa-regular fa-heart fa-2xl" style="color: #c7c9cc;"></i>
-            </div>
-
-
-            <div class="added"></div>
-            <i class="fa-solid fa-check fa-2xl" style="color: #c7c9cc;"></i>
-          </div>
-          <div class="product__imgParent flex-column"> <img loading="lazy"
-              src="../../../img/Products/Toys/Boys/SmallAvengersCharacters.png" class="product__img" alt=""></div>
-
-          <div class="product-details flex-column">
-            <p class="product_name">Product Name</p>
-            <div class="product_price">Price</div>
-            <div class="atc">
-              <button class="atc__btn flex-row gap-08">Add To Cart <ion-icon name="cart-outline"></ion-icon></button>
-
-            </div>
-
-
-          </div>
-        </div>
-        <!--*********************************-->
-
-
-
-
-
-
-
-
-
-
-
       </div>
 
-    </div>
-  </section>
-  <!-- End Main -->
+      <div class="discover gap-102 flex-row Box flex-column">
+        <h2>Discover</h2>
 
-
-  <!-- Start footer flex-row  Section -->
-  <section class="footer flex-row ">
-
-    <div class="contact flex-row Box flex-column ">
-      <div class="NemoImg">
-        <img src="../../../img/nemoLogo.png" alt="">
+        <div class="location_delivery">
+          <a href="">Our Location</a>
+          <a href="../../../footer/delivery&shipment/D&S.html"
+            >Delivery & Shipment</a
+          >
+          <a href="../../../footer/customersReviews/CR.html"
+            >Customers Reviews</a
+          >
+        </div>
       </div>
 
-    </div>
-
-
-
-    <div class="discover gap-102 flex-row Box flex-column">
-      <h2>Discover</h2>
-
-      <div class="location_delivery">
-        <a href="">Our Location</a>
-        <a href="../../../footer/delivery&shipment/D&S.html">Delivery & Shipment</a>
-        <a href="../../../footer/customersReviews/CR.html">Customers Reviews</a>
+      <div class="aboutUs gap-102 flex-row Box flex-column">
+        <h2>About Us</h2>
+        <div class="contact_aboutUs">
+          <!-- <a>Contact Us</a> -->
+          <a href="../../../footer/aboutUs/aboutUs.html">About Us</a>
+        </div>
       </div>
-
-    </div>
-
-
-
-
-
-
-
-    <div class="aboutUs gap-102 flex-row Box flex-column">
-
-      <h2>About Us</h2>
-      <div class="contact_aboutUs">
-        <!-- <a>Contact Us</a> -->
-        <a href="../../../footer/aboutUs/aboutUs.html">About Us</a>
-      </div>
-
-
-
-
-    </div>
-
-
-
-
-
-
-  </section>
-  <!-- End footer flex-row  Section -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <script src="../../../js/script.js"></script>
-  <script src="../../js/script.js"></script>
-</body>
-
-
+    </section>
+    <!-- End footer flex-row  Section -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../../../js/script.js"></script>
+    <script src="../../js/script.js"></script>
+  </body>
 </html>
