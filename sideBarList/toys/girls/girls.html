@@ -1,181 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Meta -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="title" content="Nemo" />
-    <meta
-      name="description"
-      content="Discover a treasure trove of one-of-a-kind toys, offering endless joy and imagination."
-    />
-    <meta
-      name="keywords"
-      content="Lego,Toys,Babies,BestWay,Blocks,Puzzle,Mekano"
-    />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="language" content="English" />
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- End Meta -->
+  <meta name="title" content="Nemo">
+  <meta name="description"
+    content="Discover a treasure trove of one-of-a-kind toys, offering endless joy and imagination.">
+  <meta name="keywords" content="Lego,Toys,Babies,BestWay,Blocks,Puzzle,Mekano">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="language" content="English">
 
-    <!-- Links To Sheets -->
-    <link rel="stylesheet" href="../../../css/global.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- End Links To Sheets -->
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Sniglet:wght@400;800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- End Fonts -->
-    <title>Girls Page</title>
-  </head>
+  <!-- End Meta -->
 
-  <body>
-    <!-- ******* Start Body Absoluted Parts ******* -->
-    <!-- (1) Body Opacity Change After Clicking On Menu  -->
-    <div class="Opacity"></div>
-    <!-- (2) Side Bar -->
-    <div class="sideBar" id="sideBar">
-      <ul class="listParent">
-        <li>
-          <a
-            href="../../../index.html"
-            class="closeOnClick"
-            onclick="filterProducts(event)"
-            data-filter="product"
-            ><img
-              class="sideBar__icons"
-              src="../../../img/icons/home-svgrepo-com.svg"
-              alt=""
-            />
-            home</a
-          >
-        </li>
 
-        <li>
-          <a
-            href="../../../sideBarList/babies/babies.html"
-            onclick="filterProducts(event)"
-            data-filter="babies"
-            ><img
-              class="sideBar__icons"
-              src="../../../img/icons/baby-stroller-svgrepo-com.svg"
-              alt=""
-            />
-            Babies</a
-          >
-        </li>
+  <!-- Links To Sheets -->
+  <link rel="stylesheet" href="../../../css/global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- End Links To Sheets -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Sniglet:wght@400;800&display=swap"
+    rel="stylesheet">
+  <!-- End Fonts -->
+  <title>Girls Page</title>
+</head>
 
-        <li>
-          <a
-            href="../../../sideBarList/birthDay&gifts/BD&G.html"
-            onclick="filterProducts(event)"
-            data-filter="babies"
-            ><img
-              class="sideBar__icons"
-              src="../../../img/icons/gift-svgrepo-com.svg"
-              alt=""
-            />
-            Birth Day & Gifts</a
-          >
-        </li>
+<body>
+  <!-- ******* Start Body Absoluted Parts ******* -->
+  <!-- (1) Body Opacity Change After Clicking On Menu  -->
+  <div class="Opacity"></div>
+  <!-- (2) Side Bar -->
+  <div class="sideBar" id="sideBar">
+    <ul class="listParent">
 
-        <li class="toys-category">
-          <a class="showToys selected" onclick="showSubList()"
-            ><img
-              class="sideBar__icons"
-              src="../../../img/icons/joystick-gamepad-svgrepo-com.svg"
-              alt="" />Toys<span class="flex-row"
-              ><ion-icon
-                class="down-chevron"
-                name="chevron-down-outline"
-              ></ion-icon></span
-          ></a>
+      <li>
+        <a href="../../../index.html" class="closeOnClick" onclick=filterProducts(event) data-filter="product"><img
+            class="sideBar__icons" src="../../../img/icons/home-svgrepo-com.svg" alt="">
+          home</a>
+      </li>
 
-          <ul class="toysList subList">
-            <li>
-              <a
-                href="../../../sideBarList/toys/boys/boys.html"
-                onclick="filterProducts(event)"
-                data-filter="boys"
-                ><img
-                  class="sideBar__icons"
-                  src="../../../img/icons/boy-svgrepo-com.svg"
-                  alt=""
-                />Boys</a
-              >
-            </li>
-            <li>
-              <a
-                class="selected"
-                href="../../../sideBarList/toys/girls/girls.html"
-                onclick="filterProducts(event)"
-                data-filter="girls"
-                ><img
-                  class="sideBar__icons"
-                  src="../../../img/icons/girl-svgrepo-com.svg"
-                  alt=""
-                />
-                Girls</a
-              >
-            </li>
-            <li>
-              <a
-                href="../../../sideBarList/toys/family/family.html"
-                onclick="filterProducts(event)"
-                data-filter="family"
-                ><img
-                  class="sideBar__icons"
-                  src="../../../img/icons/family-3-generations-svgrepo-com.svg"
-                  alt=""
-                />
-                Family</a
-              >
-            </li>
-          </ul>
-        </li>
 
-        <li onclick="filterProducts(event)" data-filter="sea-stuff">
-          <a
-            href="../../../sideBarList/seaStuff/seaStuff.html"
-            onclick="filterProducts(event)"
-            data-filter="sea-stuff"
-            ><img
-              class="sideBar__icons"
-              src="../../../img/icons/beachumbrella-svgrepo-com.svg"
-              alt=""
-            />
-            Sea Stuff</a
-          >
-        </li>
+      <li>
+        <a href="../../../sideBarList/babies/babies.html" onclick=filterProducts(event) data-filter="babies"><img
+            class="sideBar__icons" src="../../../img/icons/baby-stroller-svgrepo-com.svg" alt="">
+          Babies</a>
+      </li>
 
-        <li class="educational-category">
-          <a
-            class="showEducation"
-            onclick="showSubList2()"
-            data-filter="educational"
-            ><img
-              class="sideBar__icons"
-              src="../../../img/icons/brainIcon.svg"
-              alt="" />
-            Educational<span class="flex-row"
-              ><ion-icon
-                class="down-chevron"
-                name="chevron-down-outline"
-              ></ion-icon></span
-          ></a>
+      <li>
+        <a href="../../../sideBarList/birthDay&gifts/BD&G.html" onclick=filterProducts(event) data-filter="babies"><img
+            class="sideBar__icons" src="../../../img/icons/gift-svgrepo-com.svg" alt="">
+          Birth Day & Gifts</a>
+      </li>
 
-<<<<<<< HEAD
       <li class="toys-category">
 
         <a class="showToys selected" onclick="showSubList()"><img class="sideBar__icons"
@@ -183,9 +66,10 @@
               class="down-chevron" name="chevron-down-outline"></ion-icon></span></a>
 
         <ul class="toysList  subList">
-          <li><a href="../../../sideBarList/toys/boys/boys.html" onclick=filterProducts(event) data-filter="boys"><img
-                class="sideBar__icons" src="../../../img/icons/boy-svgrepo-com.svg" alt="">Boys</a></li>
-          <li><a class="selected" href="../../../sideBarList/toys/girls/girls.html" onclick=filterProducts(event)
+          <li><a href="../../../sideBarList/toys/boys/boys.html" class="selected" onclick=filterProducts(event)
+              data-filter="boys"><img class="sideBar__icons" src="../../../img/icons/boy-svgrepo-com.svg"
+                alt="">Boys</a></li>
+          <li><a href="../../../sideBarList/toys/girls/girls.html" onclick=filterProducts(event)
               data-filter="girls"><img class="sideBar__icons" src="../../../img/icons/girl-svgrepo-com.svg" alt="">
               Girls</a>
           </li>
@@ -271,16 +155,6 @@
   </div>
   <!-- End contact boxes -->
   <!-- ******* End Absoluted Parts ******* -->
-
-
-
-
-
-
-
-
-
-
   <!-- (1) Start Title & Announcements Part -->
   <section class="announcements main-container full-width-section">
 
@@ -291,125 +165,6 @@
           <div class="mainTitle flex-column">
             <h2 class="titleBox__text">Girls</h2>
             <h3>SECTION</h3>
-=======
-          <ul class="educationList subList">
-            <li>
-              <a
-                href="../../../sideBarList/educational/lego/lego.html"
-                onclick="filterProducts(event)"
-                data-filter="lego"
-              >
-                <img
-                  class="sideBar__icons"
-                  src="../../../img/icons/lego-2-svgrepo-com.svg"
-                  alt=""
-                />
-                Lego</a
-              >
-            </li>
-            <li>
-              <a
-                href="../../../sideBarList/educational/puzzle/puzzle.html"
-                onclick="filterProducts(event)"
-                data-filter="puzzle"
-                ><img
-                  class="sideBar__icons"
-                  src="../../../img/icons/puzzle-svgrepo-com.svg"
-                  alt=""
-                />
-                Puzzle</a
-              >
-            </li>
-            <li>
-              <a
-                href="../../../sideBarList/educational/makano/mekano.html"
-                onclick="filterProducts(event)"
-                data-filter="mekano"
-                ><img
-                  class="sideBar__icons"
-                  src="../../../img/icons/hammer-wrench-svgrepo-com.svg"
-                  alt=""
-                />
-                Mekano</a
-              >
-            </li>
-            <li>
-              <a
-                href="../../../sideBarList/educational/other/other.html"
-                onclick="filterProducts(event)"
-                data-filter="other"
-                >Other</a
-              >
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <!-- (3) header -->
-    <header>
-      <div class="header main-container flex-row">
-        <div class="userSpace gap-08 flex-row">
-          <div class="favourites iconHolder">
-            <p>0</p>
->>>>>>> 3e0b390627c4a0fa6430c9c22559d0cbc0088039
-
-            <a href="../../../userSpace/liked-P/liked-P.html">
-              <ion-icon class="headerIcon" name="heart-outline"></ion-icon>
-            </a>
-          </div>
-          <div class="cart iconHolder">
-            <p>0</p>
-            <a href="../../../userSpace/cart/cart.html"
-              ><ion-icon class="headerIcon" name="bag-outline"></ion-icon>
-            </a>
-          </div>
-        </div>
-        <a href="../../../index.html"
-          ><img class="logo-img" src="../../../img/nemoLogo.png" alt="Logo"
-        /></a>
-        <div class="menu-box flex-row gap-08">
-          <h3>Menu</h3>
-          <i class="headerIcon fa-solid fa-bars" onclick="showMenu()"></i>
-        </div>
-      </div>
-    </header>
-    <!-- end header -->
-    <!-- (4) Start contact boxes -->
-    <div class="social-media flex-column">
-      <a href="" class="contact-box flex-row facebook"
-        ><img src="../../../img/icons/facebook-color-svgrepo-com.svg" alt=""
-      /></a>
-      <a href="" class="contact-box flex-row telegram"
-        ><img src="../../../img/icons/telegram-svgrepo-com.svg" alt=""
-      /></a>
-      <a href="" class="contact-box flex-row whatsapp"
-        ><img src="../../../img/icons/whatsapp-svgrepo-com.svg" alt=""
-      /></a>
-      <a href="" class="contact-box flex-row instagram"
-        ><img src="../../../img/icons/instagram-svgrepo-com.svg" alt=""
-      /></a>
-    </div>
-    <!-- End contact boxes -->
-    <!-- ******* End Absoluted Parts ******* -->
-
-    <!-- (1) Start Title & Announcements Part -->
-    <section class="announcements main-container full-width-section">
-      <div class="introduction flex-column">
-        <div class="heroTitle gap-102 titleBox flex-row">
-          <div class="verticalLine"></div>
-          <div class="centerParent flex-column">
-            <div class="mainTitle flex-column">
-              <h2 class="titleBox__text">Girls</h2>
-              <h3>SECTION</h3>
-            </div>
-            <div class="subTitle"></div>
-          </div>
-
-          <div class="verticalLine"></div>
-        </div>
-      </div>
-    </section>
-    <!-- end Title & Announcements Part-->
 
     <!-- (2) Start Main  -->
     <section class="main-content main-container">
